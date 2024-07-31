@@ -1,0 +1,58 @@
+.brand_card_section {
+    padding: var(--section-spacing) 0 var(--section-spacing) 0;
+}
+.brand_card_section .col-md-4 {
+    padding: 0 25px 0 0 !important;
+}
+.brand_card_section .card-body {
+    padding: 10px !important;
+}
+
+.brand_card_section .card {
+    border-radius: 10px;
+    border: var(--button-border);
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s;
+    padding: var(--brand-card-padding);
+    text-align: left;
+    height: var(--brand-card-height);
+}
+.brand_card_section .card:hover {
+    box-shadow: var(--box-shadow-none);
+    transition: all 0.3s;
+}
+.brand_card_section .card .card-title {
+    padding: var(--brand-card-title-padding);
+    font-size: var(--brand-card-title);
+    line-height: var(--brand-card-title-height);
+    height: var(--brand-title-height);
+}
+.brand_card_section .card .card-text {
+    padding: var( --brand-card-text-padding);
+}
+.brand_card_section .secodaryButtonDiv {
+    padding: 0 !important
+}
+.brand_card_section .secodaryButtonDiv .button {
+    width: 120px;
+    justify-content: space-between !important;
+}
+.brand_card_section .col-md-4:nth-child(3) {
+    padding: 0 !important;
+}
+@media(max-width: 700px) {
+    .brand_card_section .col-md-4 {
+        padding: 30px 0px 30px 0px !important;
+    }
+    .brand_card_section .card {
+        width: 98%;
+    }
+    .brand_card_section .col-md-4:nth-child(3) {
+        padding: 30px 0px 30px 0px !important;
+    }
+}
+@media(min-width: 768px) and (max-width: 1000px) {
+    .brand_card_section .card {
+        height: 370px;
+    }
+}

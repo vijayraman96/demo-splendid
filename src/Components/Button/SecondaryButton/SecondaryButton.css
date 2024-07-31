@@ -1,0 +1,24 @@
+.secodaryButtonDiv {
+    width: var(--secondary-button-width);
+    padding: 10px 20px;
+}
+.secodaryButtonDiv .buttonText {
+    font-size: var(--button-text);
+    color: var( --button-color);
+    font-weight: var(--button-font-weight);
+    color: var(--button-color);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.secodaryButtonDiv:hover .button svg {
+    transform: translateX(40%);
+    cursor: pointer;
+    transition: all 0.3s;
+    color: var(--button-hover-color);
+}
+.secodaryButtonDiv:hover .buttonText {
+    color: var(--button-hover-color)
+}
+.secodaryButtonDiv .button svg {
+    transition: all 0.3s;
+}

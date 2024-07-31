@@ -1,0 +1,103 @@
+.funnel_section {
+    padding: var(--section-spacing) 0 0 0;
+}
+.funnel_section .image_container {
+    text-align: left;
+}
+.funnel_section .image_container .title {
+    display: var(--mob_title);
+}
+.funnel_section .image_container img {
+    height: 700px;
+    width: 95%;
+    object-fit: cover;
+    margin:10px 0 0 0;
+}
+.title {
+    font-size: var(--main_title);
+    font-weight: var(--fw-800);
+    line-height: var(--main_title_height);
+    text-align: left;
+}
+.content_div {
+    padding: 0 0 0 var(--div-left-padding);
+}
+.content_div .sub_title{
+    padding: var(--sub-title-padding);
+    font-size: var(--banner-description-font-size);
+    line-height: var(--banner-description-line-height);
+    text-align: left;
+    font-weight: var(--fw-400);
+}
+ul {
+    padding: var(--ul-padding);
+    list-style-type: none;
+}
+li {
+    padding: var(--li-padding);
+}
+.approach {
+    font-size: var(--approach);
+    color: var(--main-color);
+    text-align: left;
+    }
+li p {
+    text-align: left;
+    padding: 10px 0;
+}
+@media(min-width: 1600px) {
+    li p {
+        font-size: 18px;;
+        padding:13px 0
+    }
+    .image_container img {
+        height: 810px !important;
+        width: 92% !important;
+        object-fit: cover;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+    .funnel_section .col-md-6:nth-child(1) {
+        background-color: #36E2E6;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image_container img {
+        height: 470px !important;
+        width: 100% !important;
+        object-fit: cover;
+    }
+}
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .funnel_section .col-md-6:nth-child(1) {
+        background-color: #36E2E6;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image_container img {
+        height: 650px !important;
+        width: 100% !important;
+        object-fit: cover;
+    }
+}
+@media(max-width:700px) {
+    .content_div .title {
+        display: var(--laptop_title);
+   }
+   .content_div {
+    padding: 0;
+   }
+   .title {
+    line-height: 40px;;
+   }
+   .funnel_section .image_container img {
+    height: auto;
+    width: 100%;
+    margin: 40px 0 10px 0;
+   }
+}

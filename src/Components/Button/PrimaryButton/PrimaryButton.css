@@ -1,0 +1,61 @@
+@import '../../../assets/constant.css';
+
+.buttonDiv {
+    cursor: pointer;
+}
+.buttonDiv {
+    background-color: var(--white-bg);
+    font-size: var(--button-text);
+    color: var( --button-color);
+    font-weight: var(--button-font-weight);
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s;
+    cursor: pointer;
+    width: var(--primary-button-width);
+    padding: var(--button-padding);
+    display: flex;
+    justify-content: space-around;
+}
+.buttonDiv:hover {
+    background-color: var(--white-bg);
+    font-size: var(--button-text);
+    color: var(--button-hover-color);
+    font-weight: var(--button-font-weight);
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    box-shadow: var(--box-shadow-none);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.buttonDiv .buttonText {
+    width: 100px;
+}
+.buttonDiv .button svg {
+    transform: rotate(-45deg);
+    cursor: pointer;
+    /* transition: all 0.3s; */
+    color: var(--button-color);
+    /* padding: 0 0 0 20px; */
+    transition: all 0.3s;
+    transition: transform 0.3s ease;
+  
+    /* transform: translateX(20px); */
+}
+.buttonDiv:hover .button svg {
+    transform: rotate(0deg);
+    cursor: pointer;
+    transition: all 0.3s;
+    color: var(--button-hover-color);
+ 
+}
+.buttonDiv:hover .buttonText {
+    color: var(--button-hover-color)
+}
+.secodaryButtonDiv .button svg {
+    transition: all 0.3s;
+}
+@media (max-width: 700) {
+    
+}

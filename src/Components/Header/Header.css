@@ -1,0 +1,108 @@
+@import '../../assets/constant.css';
+
+.navbarDiv {
+    height: var(--header-height);
+    background-color: var(--navbar-bg-transparent);
+}
+.navbarWhiteDiv {
+    background-color: #fff;
+    height: 90px;
+}
+.nav-link {
+    font-size: var(----menu-element-font);
+    line-height: var(--menu-element-line-height);
+    color: var(--main-color);
+    font-weight: var(--fw-600);
+    margin: var(--menu-margin);
+    width: 130px;
+    vertical-align: middle;
+}
+.nav-link {
+    color: var(--main-color);
+}
+.activeMenu {
+    color: var(--orange-color) !important;
+    
+}
+.navButtonDiv {
+    margin: 0 0 0 10%; 
+}
+.navbarDiv .header {
+   border-bottom: var(--line-border);
+  height: var(--header-height);
+}
+.navButtonDiv .buttonDiv {
+    padding: 15px 20px !important;
+    width: 150px !important;
+}
+@media (max-width: 700px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar-nav {
+        
+        justify-content: space-between !important;
+        height: 10vh;
+        /* padding: var(--mobile_icon_div); */
+        
+    }
+    .navbar-collapse {
+        position: absolute;
+        top: 118px;
+        left: 0;
+        width: 100vw;
+        height: 220px;
+        background-color: #fff;
+    }
+    .navbar-collapse .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .navButtonDiv {
+        margin: 0
+    }
+    .nav_mob {
+        display: flex;
+        justify-content: space-between;
+        padding: var(--mobile_icon_div) 0 var(--mobile_icon_div) 0;
+        height: 200px;
+    }
+}
+@media(min-width: 701px) and (max-width: 1000px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar-nav {
+        
+        justify-content: space-between !important;
+        height: 10vh;
+        /* padding: var(--mobile_icon_div); */
+        
+    }
+    .navbar-collapse {
+        position: absolute;
+        top: 118px;
+        left: 0;
+        width: 100vw;
+        height: 300px;
+        background-color: #fff;
+    }
+    .navbar-collapse .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .navButtonDiv {
+        margin: 0
+    }
+    .nav_mob {
+        display: flex;
+        justify-content: space-between;
+        padding: var(--mobile_icon_div) 0 var(--mobile_icon_div) 0;
+        height: 250px;
+        margin: 0 auto!important
+    }
+}

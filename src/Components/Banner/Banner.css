@@ -1,0 +1,45 @@
+.bannerSection {
+    padding: var(--banner-top-padding) 0 var(--banner-bottom-padding) 0;
+}
+.bannerDivContent {
+    margin: var( --banner-margin-top) 0 0 0;
+}
+.main_title {
+    font-size: var(--banner-title-font-size) ;
+    text-align: left;
+    font-family: var(--font-family);
+    font-weight: var(--fw-900);
+}
+.description {
+    font-size: var(--banner-description-font-size) ;
+    text-align: left;
+    font-family: var(--font-family);
+    font-weight: var(--fw-400);
+    padding: var(--banner-description-padding) 0 var(--banner-description-padding) 0;
+}
+.buttonContainer {
+    width: 50%;
+    padding: var(--banner-description-padding) 0 var(--banner-description-padding) 0;
+}
+.buttonContainer  .secodaryButtonDiv {
+    margin: 0 0 0 5%;
+}
+.yellow {
+   background-color: var(--bgYellow); 
+}
+@media(max-width: 700px) {
+    .buttonContainer {
+        width: 100%;
+        align-items: center;
+    }
+}
+@media(min-width: 768px) and (max-width: 1000px) {
+    .buttonContainer {
+        width: 100%;
+    }
+}
+@media(min-width: 1001px) and (max-width: 1200px) {
+    .buttonContainer {
+        width: 100%;
+    }
+}
