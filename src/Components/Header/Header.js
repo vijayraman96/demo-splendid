@@ -27,7 +27,6 @@ function NavbarComponent() {
       
 
   const isActive = (path) => {
-    console.log('location.pathname', location.pathname)
     return location.pathname === path;
   };
   return (

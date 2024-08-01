@@ -1,0 +1,114 @@
+.brand_container .section {
+    padding: var(--brand-div-margin-top) 0 60px 0;
+    /* padding: 0 0 70px 0; */
+}
+.brand_container .image_container .mob_title{
+    display: var(--mobile-view);
+}
+.brand_container .image_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.brand_container .image_container img {
+    width: 95%;
+    height: 410px;
+    object-fit: cover;
+    margin: 10px 0 0 0;
+    text-align: left;
+}
+.brand_container .content_container {
+    padding-left: var(--div-left-padding);
+}
+.brand_container .content_container .title{
+   font-size: var(--brand-div-title);
+   line-height: var(--brand-div-title-height);
+}
+.brand_container .content_container .para{
+   padding: var(--brand-div-inner-section-padding);
+   text-align: left;
+}
+.brand_container .content_container .buttonDiv{
+  margin: var( --brand-div-button-margin) 0 0 0
+}
+#discover-talent img {
+    height: 340px;
+    object-fit: cover;
+}
+.brand_li {
+    list-style-type: disc;
+    padding-inline-start: 20px;;
+}
+.brand_li li{
+    text-align: left;
+    padding: 5px 0;
+}
+@media(min-width: 1200px) and (max-width: 1500px) {
+    .brand_container .image_container img {
+        width: 95%;
+        height: 450px;
+        object-fit: cover;
+        margin: 10px 0 0 0;
+        text-align: left;
+    }
+    #enable-creator img {
+        height: 600px !important;
+    }
+}
+@media(min-width: 1601px) {
+    .brand_container .image_container img {
+        width: 95%;
+        height: 420px !important;
+        object-fit: cover;
+        margin: 10px 0 0 0;
+        text-align: left;
+    }
+    #discover-talent img {
+        height: 350px !important;
+        object-fit: cover;
+    }
+    .brand_container .content_container .title{
+        font-size: var(--brand-div-title);
+        line-height: var(--brand-div-title-height);
+     }
+     #enable-creator .image_container img {
+        height: 550px !important;
+    }
+}
+@media(min-width: 1001px) and (max-width: 1200px) {
+    .brand_container .image_container img {
+        width: 95%;
+        height: 450px !important;
+        object-fit: cover;
+        margin: 10px 0 0 0;
+        text-align: left;
+    }
+    .content_container {
+        padding: 0 0 0 30px !important
+    }
+    #discover-talent img {
+        height: 370px !important;
+        object-fit: cover;
+    }
+    #enable-creator .image_container img {
+        height: 620px !important;
+    }
+}
+@media(max-width: 760px) {
+    .lap_title {
+        display: none;
+    }
+    .brand_container .image_container h2 {
+        padding: 0px 0 20px 0;
+    }
+    .brand_container .image_container img {
+        width: 100%;
+        height: auto;
+    }
+    #discover-talent img {
+        height: auto;
+    }
+    .brand_container .content_container .para {
+
+    }
+}

@@ -80,6 +80,21 @@ p,h1,h2,h3,h4,h5,h6 {
     --normal-text: 16px;
     --brand-card-height: 340px;
     --brand-title-height: 90px;
+    --brand-div-title: 42px;
+    --brand-div-title-height: 50px;
+    --brand-div-inner-section-padding: 20px 0;
+    --brand-div-button-margin: 30px;
+    --brand-div-padding-top: 110px;
+    --brand-div-margin-top: 130px;
+    --input-width: 100%;
+    --input-div-padding: 25px 0;
+    --input-font: 16px;
+    --input-font-height: 24px;
+    --input-div-height: 90px;
+    --input-field-height: 60px;
+    --contact-title: 40px;
+    --main-sub-title:40px;
+    --main-sub-title2:20px;
     /* --brand-card-subtitle: 16px */
   }
   @media (min-width: 1600px) {
@@ -108,6 +123,8 @@ p,h1,h2,h3,h4,h5,h6 {
     --approach: 24px;
     --brand-card-padding: 50px 20px;
     --brand-card-height: 330px;
+    --brand-div-title: 55px;
+    --brand-div-title-height: 65px;
     }
     .row {
         padding: 0 10px !important;
@@ -125,6 +142,10 @@ p,h1,h2,h3,h4,h5,h6 {
         --div-left-padding: 0px;
         --revolution-title: 26px;
         --revolution-title-height: 36px;
+        --brand-div-title: 30px;
+    --brand-div-title-height: 40px;
+    --main-sub-title:30px;
+    --main-sub-title2:18px;
     }
 }
 @media(min-width: 1001px) and (max-width: 1200px) {
@@ -139,6 +160,10 @@ p,h1,h2,h3,h4,h5,h6 {
         --div-left-padding: 0px;
         --revolution-title: 26px;
         --revolution-title-height: 36px;
+        --brand-div-margin-top:70px;
+        --brand-div-title: 35px;
+    --brand-div-title-height: 45px;
+
     }
 }
 @media (max-width: 750px) {
@@ -165,6 +190,11 @@ p,h1,h2,h3,h4,h5,h6 {
         --lap-view: none;
         --mobile-view: block;
         --brand-card-height: 320px;
+        --brand-div-margin-top: 70px;
+        --div-left-padding: 0;
+        --brand-div-inner-section-padding: 15px 0 10px 0;
+        --main-sub-title:24px;
+        --main-sub-title2:18px;
     }
     .col-md-6, .col-md-4, .col-sm-12 {
         padding: 0 5px!important

@@ -1,0 +1,200 @@
+.contact_section {
+    padding: var( --banner-top-padding) 0 var(--banner-top-padding) 0;
+  
+}
+.contact_section .container {
+    margin: 70px auto 0 auto;
+}
+.contact_section .title {
+    font-size: var(--contact-title);
+    line-height: 40px;
+}
+.contact_section .image_container {
+    position: relative;
+    text-align: left;
+}
+.contact_section .image_container .title {
+    font-size: var(--contact-title);
+    line-height: 40px;
+    position: absolute;
+    top: 7%;
+    left: 18%;
+    transform: translateX(-8%);
+}
+.contact_section .image_container .para {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 14%;
+    left: 18%;
+    transform: translateX(-8%);
+}
+.contactBtn {
+    color: var(--main-color);
+    font-size: 16px;
+    line-height: 24px;;
+    font-weight: var(--fw-700);
+    background-color: #fff;
+    border: 2px solid var(--main-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--button-border-radius);
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.contactBtn:hover {
+    box-shadow: var(--box-shadow-none);
+    color: var(--main-color);
+    font-size: 16px;
+    line-height: 24px;;
+    font-weight: var(--fw-700);
+    background-color: #fff;
+    border: 2px solid var(--main-color);
+}
+.contact_section .image_container img {
+    width: 95%;
+    height: 770px;
+    object-fit: cover;
+    margin: 10px 0 0 0;
+}
+.contact {
+    padding: 60px 0 0 var(--div-left-padding) 
+}
+.mobile_title {
+    display: none
+}
+.laptop_title {
+    display: var(--laptop-view);
+    text-align: left;
+    width: 100%;
+    display: block;
+}
+@media(min-width: 1601px ) {
+    .contact_section .image_container .title {
+        top: 7%;
+        left: 24%;
+        transform: translateX(-8%);
+    }
+    .contact_section .image_container .para {
+        top: 14%;
+        left: 24%;
+        transform: translateX(-8%);
+    }
+    .contact_section .image_container img {
+        height: 770px !important;
+    }
+}
+@media(min-width: 1001px) and (max-width: 1200px) {
+    .contact_section {
+        padding: 170px 0;
+    }
+    .contact_section .image_container .title {
+        top: 7%;
+        left: 13%;
+        transform: translateX(-8%);
+    }
+    .contact_section .image_container .para {
+        top: 14%;
+        left: 12%;
+        transform: translateX(-8%);
+    }
+    .contact_section .image_container img {
+        height: 767px !important;
+        width: 100% !important;
+    }
+    .title1 {
+        top: 0 !important
+    }
+    .mob_title {
+        display: none !important;
+    }
+    
+}
+@media(min-width: 750px) and (max-width: 1000px) {
+    .contact_section .image_container .title {
+        top: 12%;
+        left: 5% !important;
+        transform: translateX(0%);
+        width: 100%;
+        text-align: left;
+        font-size: 26px;
+    }
+    .contact_section .image_container .para {
+        top: 17%;
+        left: 05%;
+        transform: translateX(0%);
+        width: 100%;
+        text-align: left;
+    }
+    .contact_section .image_container img {
+        height: auto !important;
+        width: 100% !important;
+    }
+    .mobile_title {
+        display: block;
+        font-size: 35px;
+        line-height: 45px;;
+        text-align: left;
+        padding: 0 0 30px 0;
+    }
+    .laptop_title {
+        display: none
+    }
+    .title1 {
+        position: relative !important;
+        padding: 0 0 20px 0;
+        font-size: 30px !important;
+        left: 0% !important
+    }
+    .contact {
+        padding:40px 0 0 0;
+    }
+}
+@media (max-width: 700px) {
+    .contact_section {
+        padding: 130px 0 100px 0;
+    }
+    .contact_section .container {
+        margin: 70px 0 0 0
+    }
+    .contact_section .image_container .title {
+        text-align: left;
+        font-size: 26px;
+        width: 100%;
+        left: 10%;
+        transform: translateX(-5%);
+        font-size: 22px;
+        top: 16%;
+    }
+    .laptop_title {
+        display: none;
+    }
+    .contact_section .image_container .title1 {
+        top: -40px;
+        font-size: 30px;;
+        left: 5%;
+    }
+    .contact_section .image_container .para {
+        text-align: left;
+        left: 50%;
+        width:90% !important;
+        transform: translateX(-50%);
+        top: 23%;
+    }
+    .mob_title {
+        
+    }
+    .contact_section .image_container img {
+        height: auto;
+    }
+    .contact {
+        padding: 30px 0 0 0
+    }
+    .mobile_title {
+        display: block;
+        text-align: left;
+        font-size: 30px;
+        font-weight: 800;
+        padding-bottom: 20px;
+    }
+}
