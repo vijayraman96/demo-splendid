@@ -32,6 +32,7 @@
 ul {
     padding: var(--ul-padding);
     list-style-type: none;
+    margin: 0 ;
 }
 li {
     padding: var(--li-padding);

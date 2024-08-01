@@ -56,7 +56,7 @@ const FourFunnel = () => {
                 <h6 className="approach">
                   4.  Collaborate for campaigns, gifting and  with like minded brands
                 </h6>
-                <p className="para">
+                <p className="para pb-0">
                 Splendid facilitates brand-brand, brand-creator, and creator-creator collaborations, multiplying engagement and ROI.
                 </p>
               </li>

@@ -99,7 +99,7 @@
         border-radius: 0;
         background-color: transparent;
         padding: 25px 0;
-        box-shadow: 0;
+        box-shadow: none;
     }
     .mob_view .row .accordion .accordion-item button .revolution_icon_container{
         width: 100%;

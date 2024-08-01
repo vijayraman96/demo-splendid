@@ -1,9 +1,9 @@
 .contact_section {
-    padding: var( --banner-top-padding) 0 var(--banner-top-padding) 0;
+    padding: 110px 0 var(--banner-top-padding) 0;
   
 }
 .contact_section .container {
-    margin: 70px auto 0 auto;
+    margin: 0px auto 0 auto;
 }
 .contact_section .title {
     font-size: var(--contact-title);
@@ -17,7 +17,7 @@
     font-size: var(--contact-title);
     line-height: 40px;
     position: absolute;
-    top: 7%;
+    top: 7.5%;
     left: 18%;
     transform: translateX(-8%);
 }

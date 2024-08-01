@@ -1,8 +1,8 @@
 .creatorStore {
-    padding: 0 0 100px 0
+    padding: 0 0 85px 0
 }
 .store_title {
-    padding: var(--banner-top-padding) 0 60px 0; 
+    padding: var(--padding-section-top) 0 60px 0; 
     font-size: var(--store-title);
     line-height: 45px;
     width: 80%;

@@ -13,7 +13,7 @@ const BrandCard = () => {
   return (
     <div className="brand_card_section">
       <Container>
-        <Row>
+        <Row className="py-3"> 
           <Col sm={12} md={4} >
             <Card onClick={() => navigateFunction('brand#integration-with-pos')}>
               <Card.Body>

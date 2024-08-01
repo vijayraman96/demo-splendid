@@ -10,8 +10,8 @@ p,h1,h2,h3,h4,h5,h6 {
 :root {
     --banner-top-padding: 140px;
     --header-height: 110px;
-    --banner-bottom-padding: 100px;
-    --banner-margin-top: 70px;
+    --banner-bottom-padding: 60px;
+    --banner-margin-top: 40px;
     --banner-title-font-size: 100px;
     --banner-description-font-size: 22px;
     --banner-description-line-height:35px;
@@ -51,7 +51,7 @@ p,h1,h2,h3,h4,h5,h6 {
     --button-padding: 15px 40px;
     --bgYellow: #F5DB6E;
     --bgSkyblue: #B3DDF0;
-    --section-spacing: 100px;
+    --section-spacing: 85px;
     --mob_title: none;
     --laptop_title: block;
     --main_title: 60px;
@@ -97,6 +97,8 @@ p,h1,h2,h3,h4,h5,h6 {
     --main-sub-title:40px;
     --main-sub-title2:20px;
     --store-title:34px;
+    --padding-section-top: 85px;
+    --padding-section-bottom: 85px;
     /* --brand-card-subtitle: 16px */
   }
   @media (min-width: 1600px) {
@@ -117,10 +119,10 @@ p,h1,h2,h3,h4,h5,h6 {
  }
 @media (min-width: 1600px) {
     :root {
-        --banner-top-padding: 170px;
-        --banner-bottom-padding: 150px;
+        --banner-top-padding: 130px;
+        --banner-bottom-padding: 130px;
         --banner-title-font-size: 120px;
-        --section-spacing: 150px;
+        --section-spacing: 120px;
         --main_title: 66px;
     --main_title_height: 76px;
     --banner-description-font-size: 28px;
@@ -131,6 +133,7 @@ p,h1,h2,h3,h4,h5,h6 {
     --brand-div-title: 55px;
     --brand-div-title-height: 65px;
     --store-title:40px;
+    --banner-margin-top: 50px;
     }
     .row {
         padding: 0 10px !important;

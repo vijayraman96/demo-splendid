@@ -11,6 +11,9 @@ import Creator from "../../Pages/Creator/Creator";
 import StoreFront from "../../Pages/StoreFront/StoreFront/StoreFront";
 import Store from "../../Pages/StoreFront/Store";
 import Explore from "../../Pages/Explore/Explore";
+import About from "../../Pages/About/About";
+import Privacy from "../../Pages/Privacy/Privacy";
+import Terms from "../../Pages/Terms/Terms";
 
 const router = createBrowserRouter([
     {
@@ -40,6 +43,18 @@ const router = createBrowserRouter([
     {
       path: "explore",
       element: <Explore />,
+    },
+    {
+      path: "about",
+      element: <About />,
+    },
+    {
+      path: "terms-conditions",
+      element: <Terms />,
+    },
+    {
+      path: "privacy-policy",
+      element: <Privacy />,
     },
   ]);
 

@@ -1,5 +1,5 @@
 .brand_container .section {
-    padding: var(--brand-div-margin-top) 0 60px 0;
+    padding: var(--padding-section-top) 0 85px 0;
     /* padding: 0 0 70px 0; */
 }
 .brand_container .image_container .mob_title{
@@ -32,7 +32,7 @@
   margin: var( --brand-div-button-margin) 0 0 0
 }
 #discover-talent img {
-    height: 340px;
+    height: 370px;
     object-fit: cover;
 }
 .brand_li {
@@ -52,10 +52,14 @@
         text-align: left;
     }
     #enable-creator img {
-        height: 600px !important;
+        height: 650px !important;
     }
 }
 @media(min-width: 1601px) {
+    .brand_container .section {
+        padding: 100px 0 100px 0;
+        /* padding: 0 0 70px 0; */
+    }
     .brand_container .image_container img {
         width: 95%;
         height: 420px !important;

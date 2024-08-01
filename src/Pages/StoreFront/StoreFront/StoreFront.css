@@ -1,5 +1,5 @@
 .storefront_container .section {
-    padding: var(--brand-div-margin-top) 0 120px 0;
+    padding: var(--padding-section-top) 0 90px 0;
     /* padding: 0 0 70px 0; */
 }
 .storefront_container .image_container .mob_title{
