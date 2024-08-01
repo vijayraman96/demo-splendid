@@ -16,6 +16,8 @@ const Home = () => {
         primaryBtnText="Get Started"
         secondaryBtnText="For Creator"
         bgColor="yellow"
+        primaryUrl={'/contact'}
+        secondaryUrl={'/creator'}
       />
       <FourFunnel />
       <Revolution />

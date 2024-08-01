@@ -1,0 +1,121 @@
+.explore_card {
+    padding: var(--brand-div-margin-top) 0 80px 0;
+}
+.explore_card .card {
+    border: var(--button-border);
+    box-shadow: 6px 6px 0px #131313;
+    border-radius:25px;
+    transition: all 0.3s;
+    padding-bottom: 20px;
+    height: 650px;
+    width: 95%;
+    margin:20px 0;
+}
+.explore_card .card:hover {
+    box-shadow: var(--box-shadow-none);
+    transition: all 0.3s;
+}
+.explore_card .image_container {
+    position: relative;
+    margin: 5% 5%;
+}
+.explore_card .image_container .bg_image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.explore_card .image_container .logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+}
+.explore_card .title_container {
+    text-align: left;
+    margin: 5%;
+}
+.explore_card .title_container .explore_card_title {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+.explore_card .title_container a {
+    color: var(--main-color);
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 15px;
+}
+.explore_card .title_container .explore_para {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 15px;
+    color: var(--main-color);
+    padding: 10px 0;
+}
+.explore_card .secodaryButtonDiv {
+    padding: 10px 0;
+    
+}
+.explore_card .secodaryButtonDiv .button {
+    justify-content: space-between !important;
+    width: 120px;
+}
+.explore_row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+@media(min-width: 1601px) {
+    .explore_card .image_container .bg_image {
+        width: 100% !important;
+        height: 250px !important;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    .explore_card .image_container .logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 120px !important;
+        height: auto !important
+    }
+}
+@media(min-width: 800px) and (max-width: 1000px) {
+    .explore_card .image_container .bg_image {
+        width: 100% !important;
+        height: 250px !important;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    .explore_card .image_container .logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 120px !important;
+        height: auto !important
+    }
+}
+@media(min-width: 1001px) and (max-width: 1200px) {
+    .explore_card .col-lg-4 {
+        width: 50% !important;
+    }
+    .explore_card .image_container .bg_image {
+        width: 100% !important;
+        height: 250px !important;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    .explore_card .image_container .logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 120px !important;
+        height: auto !important
+    }
+}

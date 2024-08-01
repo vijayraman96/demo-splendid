@@ -1,0 +1,16 @@
+.explore_banner {
+    background-color: #A6D8B5;
+    padding: 140px 0 100px 0;
+}
+.explore_title {
+    font-size: var(--banner-title-font-size) ;
+    text-align: left;
+    font-family: var(--font-family);
+    font-weight: var(--fw-900);
+}
+@media(min-width: 1601px) {
+    .explore_banner {
+        background-color: #A6D8B5;
+        padding: 200px 0 150px 0;
+    }
+}

@@ -27,6 +27,9 @@
 .yellow {
    background-color: var(--bgYellow); 
 }
+.skyblue {
+    background-color: var(--bgSkyblue) ;
+}
 @media(max-width: 700px) {
     .buttonContainer {
         width: 100%;

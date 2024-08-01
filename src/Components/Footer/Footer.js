@@ -3,8 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { faInstagram, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import splendid from '../../assets/images/splendid.svg';
+import { useNavigate } from 'react-router-dom';
 import './Footer.css'
 const Footer = () => {
+    const navigate = useNavigate();
   return (
     <div className='footer_section'>
       <Container>
@@ -18,14 +20,14 @@ const Footer = () => {
                     <p>Splendid enables brands, creators, and customers to build meaningful relationships with each other.</p>
                 </div>
                 <div className='social_links'>
-                    <a>
+                    <a href='https://www.instagram.com/splendidfutures/' target="_blank">
                     <FontAwesomeIcon icon={faInstagram} size="2x" />
                     
                     </a>
-                    <a>
+                    <a href='https://www.linkedin.com/company/splendid-app/' target="_blank">
                     <FontAwesomeIcon icon={faLinkedin} size="2x" />
                     </a>
-                    <a>
+                    <a href='https://www.facebook.com/splendidfutures' target="blank">
                     <FontAwesomeIcon icon={faFacebook} size="2x" />
                     </a>
                 </div>
@@ -36,10 +38,10 @@ const Footer = () => {
                 <div className="footer_title">
                     <h5>Useful links</h5>
                     <ul className='footer_links'>
-                        <li><a href="/creator">I am a Creator</a></li>
-                        <li><a href="/">I am a Brand</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a>hello@splendid.app</a></li>
+                        <li><a onClick={() => navigate('/creator')}>I am a Creator</a></li>
+                        <li><a onClick={() => navigate('/')}>I am a Brand</a></li>
+                        <li><a onClick={() => navigate('/about')}>About</a></li>
+                        <li><a href="mailto:hello@splendid.app">hello@splendid.app</a></li>
                     </ul>
                 </div>
             </Col>
@@ -47,8 +49,8 @@ const Footer = () => {
                 <div className="footer_agreement">
                     <h5>Splendid User Agreement</h5>
                     <ul className='footer_links'>
-                        <li><a>Terms & Conditions</a></li>
-                        <li><a>Privacy & Policy</a></li>
+                        <li><a onClick={() => navigate('/terms-&-conditions')}>Terms & Conditions</a></li>
+                        <li><a onClick={() => navigate('/privacy-policy')}>Privacy & Policy</a></li>
                      
                     </ul>
 

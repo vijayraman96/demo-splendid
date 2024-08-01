@@ -50,6 +50,7 @@ p,h1,h2,h3,h4,h5,h6 {
     --banner-description-padding: 30px;
     --button-padding: 15px 40px;
     --bgYellow: #F5DB6E;
+    --bgSkyblue: #B3DDF0;
     --section-spacing: 100px;
     --mob_title: none;
     --laptop_title: block;
@@ -95,6 +96,7 @@ p,h1,h2,h3,h4,h5,h6 {
     --contact-title: 40px;
     --main-sub-title:40px;
     --main-sub-title2:20px;
+    --store-title:34px;
     /* --brand-card-subtitle: 16px */
   }
   @media (min-width: 1600px) {
@@ -102,13 +104,16 @@ p,h1,h2,h3,h4,h5,h6 {
         max-width: 1440px;
     }
 }
-@media(min-width: 1200px) {
- .col-md-6,.col-md-4,.col-md-3,.col-lg-6,.col-lg-4,.col-lg-3,.col-xl-6,.col-xl-4,.col-xl-3{
+@media(min-width: 1401px) {
+ .col-md-6,.col-md-4,.col-md-3,.col-md-12,.col-lg-6,.col-lg-4,.col-lg-3,.col-xl-6,.col-xl-4,.col-xl-3, .row{
     padding: 0 0px !important;
  }
  .row {
     padding: 0 15px;
  }
+ }
+ @media(min-width: 1201px) and (max-width: 1400px) {
+    
  }
 @media (min-width: 1600px) {
     :root {
@@ -125,6 +130,7 @@ p,h1,h2,h3,h4,h5,h6 {
     --brand-card-height: 330px;
     --brand-div-title: 55px;
     --brand-div-title-height: 65px;
+    --store-title:40px;
     }
     .row {
         padding: 0 10px !important;
@@ -195,6 +201,7 @@ p,h1,h2,h3,h4,h5,h6 {
         --brand-div-inner-section-padding: 15px 0 10px 0;
         --main-sub-title:24px;
         --main-sub-title2:18px;
+        --store-title:30px;
     }
     .col-md-6, .col-md-4, .col-sm-12 {
         padding: 0 5px!important

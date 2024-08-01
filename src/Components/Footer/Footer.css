@@ -27,6 +27,7 @@
     align-items: center;
     box-shadow: var(--box-shadow);
     transition: all 0.3s;
+    color: var(--main-color);
 }
 .social_links a svg {
     font-size: 20px;;

@@ -56,3 +56,8 @@
         height: 370px;
     }
 }
+@media(min-width: 1201px) and (max-width: 1400px) {
+    .brand_card_section .row {
+        margin: 0 !important
+    }
+}

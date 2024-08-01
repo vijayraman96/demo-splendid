@@ -12,8 +12,8 @@ const Banner = ({title, subTitle, primaryBtnText, secondaryBtnText, primaryUrl, 
         <h1 className='main_title'>{title}</h1>
         <p class="description">{subTitle}</p>
         <div className='buttonContainer d-flex justify-content-start align-items-center w-60'>
-            <PrimaryButton title={primaryBtnText} />
-            <SecondaryButton title={secondaryBtnText}/>
+            <PrimaryButton title={primaryBtnText} url={primaryUrl}/>
+            <SecondaryButton title={secondaryBtnText} url={secondaryUrl}/>
         </div>
       </div>
     </div>

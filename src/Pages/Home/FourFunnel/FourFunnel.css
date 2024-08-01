@@ -85,6 +85,12 @@ li p {
         object-fit: cover;
     }
 }
+@media(min-width: 1201px) {
+    .funnel_section .row {
+        padding: 0 !important;
+        /* margin: 0 0px!important; */
+    }
+}
 @media(max-width:700px) {
     .content_div .title {
         display: var(--laptop_title);
