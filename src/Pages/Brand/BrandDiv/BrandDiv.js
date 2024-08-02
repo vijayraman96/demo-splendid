@@ -14,8 +14,11 @@ const BrandDiv = () => {
 
   useEffect(() => {
     const hash = location.hash.substring(1); // Remove the leading '#'
+    console.log("Hash:", hash);
+    console.log("Refs:", refs.current);
     if (hash && refs.current[hash]) {
-      refs.current[hash].scrollIntoView({ behavior: 'smooth' });
+      console.log("Scrolling to:", refs.current[hash]);
+      refs.current[`${hash}`].scrollIntoView({ behavior: "smooth" });
     }
   }, [location]);
   return (

@@ -23,8 +23,12 @@ function NavbarComponent() {
         return () => {
           window.removeEventListener('scroll', handleScroll);
         };
+        
       }, []);
-      
+      useEffect(() => {
+        // window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top smoothly
+    }, []);
+     
 
   const isActive = (path) => {
     return location.pathname === path;

@@ -1,31 +1,38 @@
 .about_section {
     padding: var(--banner-top-padding) 0 var(--banner-bottom-padding) 0;
 }
-.about_section h1{
-    font-size: var(--main_title);
-    line-height: var(--main_title--height);
+.about_section h5{
+    /* font-size: var(--main_title);
+    line-height: var(--main_title--height); */
     font-weight: var(--fw-900);
 }
 .about_section .container {
-    width: 60%;
+    width: 33%;
 }
 .about_section .container  p {
     padding: 10px 0;
 }
 @media(min-width: 801px) and (max-width: 1200px) {
     .about_section .container {
-        width: 70%;
+        width: 45%;
     }
+}
+.about_section .secodaryButtonDiv {
+    padding: 0 !important;
+}
+.about_section .secodaryButtonDiv svg {
+    display: none;
 }
 @media(max-width: 800px) {
     .about_section .container {
         width: 90%;
         text-align: center;
     }
-    .about_section h1 {
-        padding: 40px 0 0 0;
+    .about_section h5 {
+        padding: 40px 0 60px 0 !important;
     }
     .about_section {
         padding: var(--banner-top-padding) 0 49px 0;
     }
+
 }

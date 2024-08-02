@@ -12,6 +12,7 @@ const Terms = () => {
         <Header />
 
         <Container>
+        {/* <h1><b>Terms & Conditions</b></h1> */}
           <h4>
             <b>
               SPLENDID APP END USER LICENSE AGREEMENT AND TERMS OF SERVICE

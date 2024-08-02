@@ -49,7 +49,7 @@ const Footer = () => {
                 <div className="footer_agreement">
                     <h5>Splendid User Agreement</h5>
                     <ul className='footer_links'>
-                        <li><a onClick={() => navigate('/terms-&-conditions')}>Terms & Conditions</a></li>
+                        <li><a onClick={() => navigate('/terms-conditions')}>Terms & Conditions</a></li>
                         <li><a onClick={() => navigate('/privacy-policy')}>Privacy & Policy</a></li>
                      
                     </ul>
