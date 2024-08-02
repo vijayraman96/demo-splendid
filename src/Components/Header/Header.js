@@ -26,7 +26,7 @@ function NavbarComponent() {
         
       }, []);
       useEffect(() => {
-        // window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top smoothly
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top smoothly
     }, []);
      
 
