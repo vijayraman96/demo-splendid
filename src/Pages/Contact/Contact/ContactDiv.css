@@ -2,6 +2,7 @@
     padding: 110px 0 var(--banner-top-padding) 0;
   
 }
+
 .contact_section .container {
     margin: 0px auto 0 auto;
 }
@@ -105,7 +106,7 @@
     .title1 {
         top: 0 !important
     }
-    .mob_title {
+    .contact_section .mob_title {
         display: none !important;
     }
     

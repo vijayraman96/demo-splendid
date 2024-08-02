@@ -6,6 +6,7 @@ import PrimaryButton2 from "../../Components/Button/PrimaryButton/PrimaryButton2
 import ContactDiv from "./Contact/ContactDiv";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
+import './Contact.css';
 
 const Contact = () => {
   return (

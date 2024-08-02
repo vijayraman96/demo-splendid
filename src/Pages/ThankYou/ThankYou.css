@@ -1,8 +1,9 @@
 .thankyou_div {
     margin: 180px 5% 120px 5%;
 }
+
 .thankyou_div .image_div img{
-    width: 100%;
+    width: 95%;
     height: auto
 }
 .thankyou_div .image_div {
@@ -13,11 +14,11 @@
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: var(--main-sub-title);
-    line-height: 50px;
+    font-size: 34px;
+    line-height: 40px;
     text-align: center;
     width: 100%;
-    font-weight: var(--fw-800);
+    font-weight: var(--fw-700);
 }
 .thankyou_div .image_div .thank_description {
     position: absolute;
@@ -63,6 +64,7 @@
     }   
     .thankyou_div .image_div .thank_title {
         line-height: 30px;
+        font-size: 24px !important;
     } 
     .thankyou_div .image_div .thank_description {
         bottom: 17%

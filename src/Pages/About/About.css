@@ -21,7 +21,7 @@
     padding: 0 !important;
 }
 .about_section .secodaryButtonDiv svg {
-    display: none;
+    /* display: none; */
 }
 @media(max-width: 800px) {
     .about_section .container {

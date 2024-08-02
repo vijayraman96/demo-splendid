@@ -71,6 +71,18 @@ li p {
         width: 100% !important;
         object-fit: cover;
     }
+    .laptop_title {
+        display: none !important;
+    }
+    .mob_title {
+        display: block !important;
+        padding-bottom: 20px;
+    }
+    .image_container img {
+        height: 1000px !important;
+        width: 100% !important;
+        object-fit: cover;
+    }
 }
 @media (min-width: 1001px) and (max-width: 1200px) {
     .funnel_section .col-md-6:nth-child(1) {
@@ -81,9 +93,16 @@ li p {
         justify-content: center;
     }
     .image_container img {
-        height: 650px !important;
+        height: 1200px !important;
         width: 100% !important;
         object-fit: cover;
+    }
+    .laptop_title {
+        display: none !important;
+    }
+    .mob_title {
+        display: block !important;
+        padding-bottom: 20px;
     }
 }
 @media(min-width: 1201px) {

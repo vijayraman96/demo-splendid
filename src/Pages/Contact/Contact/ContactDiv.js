@@ -6,8 +6,10 @@ import { Container, Row, Col, Accordion, Button } from "react-bootstrap";
 import Input from "../../../Components/Input/Input";
 import "./ContactDiv.css";
 import ContactImage from '../../../assets/images/contact_us.png';
+import { useNavigate } from "react-router-dom";
 
 const ContactDiv = () => {
+    const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -19,26 +21,27 @@ const ContactDiv = () => {
     validationSchema: Yup.object().shape({
       email: Yup.string()
         .email("Email is not valid")
-        .matches(
-          /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|io|ie|org|ai|net|co|info|me|app|tech|site)$/,
-          "Invalid email domain"
-        )
-        .min(10)
-        .max(100, "Email address is too long")
+        // .matches(
+        //   /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|io|ie|org|ai|net|co|info|me|app|tech|site)$/,
+        //   "Invalid email domain"
+        // )
+        // .min(10)
+        // .max(150, "Email address is too long")
         .required("Email is required"),
       fullName: Yup.string().required("Please enter your Full Name"),
       number: Yup.string().matches(
         new RegExp("[0-9]{10}"),
         "Enter valid number"
       ),
-      site_url: Yup.string().required("Please enter your Site url"),
-      social_media_url: Yup.string().required(
-        "Please enter your Social Media url"
-      ),
+    //   site_url: Yup.string().required("Please enter your Site url"),
+    //   social_media_url: Yup.string().required(
+    //     "Please enter your Social Media url"
+    //   ),
     }),
     onSubmit: (values) => {
       // e.preventDefault();
-      console.log("values", values);
+      navigate('/thankyou')
+    //   console.log("values", values);
     },
   });
   return (
@@ -112,7 +115,7 @@ const ContactDiv = () => {
                   error={
                     formik.touched.site_url ? formik.errors.site_url : undefined
                   }
-                  maxlength="200"
+                //   maxlength="200"
                   title="Site Url"
                   name="site_url"
                 />

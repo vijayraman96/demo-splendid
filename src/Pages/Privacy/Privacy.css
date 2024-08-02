@@ -19,3 +19,7 @@
 .privacy .footer_section {
     text-align: center;
 }
+.privacy_section .footer_section ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}

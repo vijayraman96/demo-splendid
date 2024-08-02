@@ -5,7 +5,7 @@ const Input = ({title, type, placeholder, value, onChange = () => {}, onBlur = (
   return (
     <div className='input_div' >
       <h6 className='input_title'>{title}</h6>
-      <input className="input" type={type} placeholder={placeholder} value={value} onChange={onChange} onBlur={onBlur} name={name}/>
+      <input className="input" type={type} placeholder={placeholder} value={value} onChange={onChange} onBlur={onBlur} name={name} autoComplete='off'/>
       <p className='error'>{error}</p>
     </div>
   )
