@@ -4,6 +4,9 @@
     height: var(--header-height);
     background-color: var(--navbar-bg-transparent);
 }
+.navbar-brand {
+    color: transparent !important
+}
 .navbarWhiteDiv {
     background-color: #fff;
     height: 90px;

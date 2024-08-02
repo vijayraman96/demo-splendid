@@ -173,10 +173,9 @@ const ContactDiv = () => {
                   {/* <PrimaryButton2 title="Get Started" iconState="false" type="submit"/>
                    */}
                   <div className="mt-5 d-flex justify-content-start">
-                    <Button type="submit" className="contactBtn">
-                      {" "}
-                      Request a Demo{" "}
-                    </Button>
+                    <button type="submit" className="contactBtn">
+                      Request a Demo
+                    </button>
                   </div>
                   <p className="error">{errorMsg}</p>
                 </div>

@@ -36,21 +36,23 @@
     font-size: 16px;
     line-height: 24px;;
     font-weight: var(--fw-700);
-    background-color: #fff;
+    background-color: #fff !important;
     border: 2px solid var(--main-color);
     box-shadow: var(--box-shadow);
     border-radius: var(--button-border-radius);
     cursor: pointer;
     padding: 10px 20px;
+    transform: all 0.3s;
 }
 .contactBtn:hover {
     box-shadow: var(--box-shadow-none);
-    color: var(--main-color);
+    color: var(--main-color) !important;
     font-size: 16px;
     line-height: 24px;;
     font-weight: var(--fw-700);
-    background-color: #fff;
+    background-color: #fff !important;
     border: 2px solid var(--main-color);
+    transition: all 0.3s;
 }
 .contact_section .image_container img {
     width: 95%;
@@ -75,6 +77,15 @@
     color: rgb(221, 50, 50);
     padding: 15px 0;
     font-size: 16px;
+}
+.btn-primary.btn {
+    background-color: #fff !important;
+    color: var(--main-color) !important;
+}
+.btn:hover {
+    background-color: #fff !important;
+    color: var(--main-color);
+    transition: all 0.3s;
 }
 @media(min-width: 1601px ) {
     .contact_section .image_container .title {
@@ -204,5 +215,6 @@
         font-weight: 800;
         padding-bottom: 20px;
     }
+    
    
 }
