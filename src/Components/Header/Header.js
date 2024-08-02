@@ -9,11 +9,13 @@ import { NavLink as RouterNavLink, useLocation } from 'react-router-dom';
 
 function NavbarComponent() {
     const [fixHeader, setFixHeader] = useState(false);
+    const [removeHeight, setRemoveHeight] = useState("");
     const location = useLocation();
     useEffect(() => {
         const handleScroll = () => {
           if (window.scrollY > 50) {
             setFixHeader(true);
+            setRemoveHeight("removeHeight");
           } else {
             setFixHeader(false);
           }
@@ -24,7 +26,7 @@ function NavbarComponent() {
           window.removeEventListener('scroll', handleScroll);
         };
         
-      }, []);
+      }, [removeHeight]);
       useEffect(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top smoothly
     }, []);
@@ -37,7 +39,7 @@ function NavbarComponent() {
     <div>
       <Navbar  expand="lg" fixed="top" className={fixHeader ?  "navbarWhiteDiv" : `navbarDiv`}>
         <Container className="d-flex justify-content-between w-100">
-          <Nav className="header d-flex justify-content-between w-100 align-items-center" >
+          <Nav className={`header d-flex justify-content-between w-100 align-items-center `} >
           <Navbar.Brand href="/">
             <img
               src={splendid}
@@ -46,8 +48,8 @@ function NavbarComponent() {
             />
           </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ms-auto d-flex align-items-center nav_mob">
+            <Navbar.Collapse className={`${removeHeight}`} id="basic-navbar-nav">
+              <Nav className={`ms-auto d-flex align-items-center nav_mob`}>
                 <Nav.Link as={RouterNavLink} to="/" className={isActive('/') ? 'activeMenu' : ''}>For Brand </Nav.Link>
                 <Nav.Link as={RouterNavLink} to="/creator" className={isActive('/creator') ? 'activeMenu' : ''}>For Creator</Nav.Link>
                 <div className="navButtonDiv"> 

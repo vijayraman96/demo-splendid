@@ -35,7 +35,14 @@
     padding: 15px 20px !important;
     width: 150px !important;
 }
+
 @media (max-width: 700px) {
+    .removeHeight{
+        top: 110px !important;
+    }
+    .navbarWhiteDiv{
+        height: 110px;
+    }
     .header {
         display: flex;
         flex-direction: row;
@@ -47,6 +54,7 @@
         /* padding: var(--mobile_icon_div); */
         
     }
+
     .navbar-collapse {
         position: absolute;
         top: 118px;
@@ -77,6 +85,9 @@
     .header {
         display: flex;
         flex-direction: row;
+    }
+    .navbarWhiteDiv{
+        height: 110px;
     }
     .navbar-nav {
         

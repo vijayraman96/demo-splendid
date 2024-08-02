@@ -91,13 +91,16 @@ li p {
         width: 100% !important
     }
 }
-@media (min-width: 1001px) and (max-width: 1200px) {
+@media (min-width: 1001px) and (max-width: 1100px) {
     .funnel_section .col-md-6:nth-child(1) {
         /* background-color: #36E2E6; */
         align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .funnel_section .image_container {
+        width: 100%;
     }
     .image_container img {
         height: 1200px !important;

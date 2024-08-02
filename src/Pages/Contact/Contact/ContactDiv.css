@@ -70,6 +70,12 @@
     width: 100%;
     display: block;
 }
+.error:last-child() {
+    text-align: left;
+    color: rgb(221, 50, 50);
+    padding: 15px 0;
+    font-size: 16px;
+}
 @media(min-width: 1601px ) {
     .contact_section .image_container .title {
         top: 7%;
@@ -198,4 +204,5 @@
         font-weight: 800;
         padding-bottom: 20px;
     }
+   
 }
