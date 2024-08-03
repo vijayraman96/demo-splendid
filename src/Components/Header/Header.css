@@ -27,6 +27,11 @@
     color: var(--orange-color) !important;
     
 }
+.navbar-brand img {
+    width: 200px;
+    height:auto;
+    object-fit: cover;
+}
 .navButtonDiv {
     margin: 0 0 0 10%; 
 }

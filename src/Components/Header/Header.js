@@ -44,7 +44,7 @@ function NavbarComponent() {
             <img
               src={splendid}
               className="d-inline-block align-top"
-              alt="React Bootstrap logo"
+              alt="Splendid"
             />
           </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />

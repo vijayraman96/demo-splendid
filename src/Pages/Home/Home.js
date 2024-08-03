@@ -11,7 +11,7 @@ const Home = () => {
     <div>
         <Header />
       <Banner
-        title="Convert Customers and Followers into Sellers! "
+        title="Convert Customers And Followers Into Sellers! "
         subTitle="Build a Commission-based Sales Force for your brand."
         primaryBtnText="Get Started"
         secondaryBtnText="For Creator"
