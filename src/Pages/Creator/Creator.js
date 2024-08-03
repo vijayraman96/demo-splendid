@@ -10,12 +10,12 @@ const Creator = () => {
     <div className='creator'>
       <Header />
       <Banner
-        title="Make your style easily shoppable "
+        title="Make Your Style Easily Shoppable "
         subTitle="Partner with brands and allow your audience to shop your product recommendations. "
-        primaryBtnText="Explore"
+        primaryBtnText="Get Started"
         secondaryBtnText="For Brand"
         bgColor="skyblue"
-        primaryUrl={'/explore'}
+        primaryUrl={'/contact'}
         secondaryUrl={'/'}
       />
       <CreatorStoreFront />

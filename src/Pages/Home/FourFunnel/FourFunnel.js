@@ -10,7 +10,7 @@ const FourFunnel = () => {
           <Col className="col-md-6" sm="12">
             <div className="image_container">
               <h2 className="title mob_title">
-                Splendid's four funnel approach
+                Splendid's Four Funnel Approach
               </h2>
               <img src={FourFunnelImg} alt="Four Funnel Approach"></img>
             </div>
@@ -18,7 +18,7 @@ const FourFunnel = () => {
           <Col className="col-md-6" sm="12">
           <div className="content_div">
           <h2 className="title laptop_title">
-              Splendid's four funnel approach
+              Splendid's Four Funnel Approach
             </h2>
             <h5 className="sub_title">
               Build a successful marketing program together. The Next-Gen Social

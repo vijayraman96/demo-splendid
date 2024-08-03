@@ -18,7 +18,7 @@ const BrandCard = () => {
             <Card onClick={() => navigateFunction('brand#integration-with-pos')}>
               <Card.Body>
                 <Card.Title className="text-left">
-                  Integrations with your <br></br> POS system
+                  Integrations With Your <br></br> POS System
                 </Card.Title>
                 <Card.Text className="text-left">
                   Turn your community into your new acquisition channel – With
@@ -32,7 +32,7 @@ const BrandCard = () => {
           <Card onClick={() => navigateFunction('brand#discover-talent')}>
               <Card.Body>
                 <Card.Title className="text-left">
-                  Discover talent that impacts your brand
+                  Discover Talent That Impacts Your Brand
                 </Card.Title>
                 <Card.Text className="text-left">
                   Discover high-ranking customers, creators, followers, and
@@ -47,7 +47,7 @@ const BrandCard = () => {
           <Card onClick={() => navigateFunction('brand#enable-creator')}>
               <Card.Body>
                 <Card.Title className="text-left">
-                Enable creator commerce & social selling
+                Enable Creator Commerce & Social Selling
                 </Card.Title>
                 <Card.Text className="text-left">
                 With Splendid brand’s can power mini-shops that are published by creators turning their followers into your buyers.

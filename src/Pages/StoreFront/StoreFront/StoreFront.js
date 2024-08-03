@@ -47,7 +47,7 @@ const StoreFront = () => {
                           ))}
                         </ul>
                       )}
-                      <PrimaryButton2 title="Explore" url="/explore" />
+                      <PrimaryButton2 title="Get Started" url="/contact" />
                     </div>
                   </Col>
                 </Row>

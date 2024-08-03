@@ -1,9 +1,9 @@
 .thankyou_div {
-    margin: 180px 5% 120px 5%;
+    margin: 130px 5% 80px 5%;
 }
 
 .thankyou_div .image_div img{
-    width: 95%;
+    width: 75%;
     height: auto
 }
 .thankyou_div .image_div {
@@ -14,7 +14,7 @@
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 34px;
+    font-size: 30px;
     line-height: 40px;
     text-align: center;
     width: 100%;
@@ -71,5 +71,10 @@
     }
     .thankyou_div .buttonDiv {
         bottom: 6%
+    }
+}
+@media(min-width: 1601px) {
+    .thankyou_div {
+        margin: 180px 0 150px 0;
     }
 }

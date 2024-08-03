@@ -12,7 +12,7 @@ const Revolution = () => {
     <div className="revolution_section">
       <Container>
         <h3 className="title text-center mx-auto">
-          A revolutionary way to increase <br></br>sales & grow your business. ​
+          A Revolutionary Way To Increase <br></br>Sales & Grow Your Business. ​
         </h3>
         <Row className="lap_view">
           <Col sm={12} md={12}>
@@ -21,7 +21,7 @@ const Revolution = () => {
                 <div className="li_container">
                   <div className="content">
                     <h3 className="revolution_title">
-                      Track to optimize performance
+                      Track To Optimize Performance
                     </h3>
                     <h6 className="revolution_description">
                       Our all-in-one platform streamlines word-of-mouth
@@ -40,7 +40,7 @@ const Revolution = () => {
               <li>
                 <div className="li_container">
                   <div className="content">
-                    <h3 className="revolution_title">View social mentions</h3>
+                    <h3 className="revolution_title">View Social Mentions</h3>
                     <h6 className="revolution_description">
                       Authenticity isn't just a buzzword—it's your growth
                       strategy.​<br></br>Get authentic reports on brand partner
@@ -59,7 +59,7 @@ const Revolution = () => {
               <li>
                 <div className="li_container">
                   <div className="content">
-                    <h3 className="revolution_title">Simple monthly payouts</h3>
+                    <h3 className="revolution_title">Simple Monthly Payouts</h3>
                     <h6 className="revolution_description">
                       Enjoy effortless financial management with monthly talent
                       and brand pay-outs​
@@ -78,7 +78,7 @@ const Revolution = () => {
                 <div className="li_container">
                   <div className="content">
                     <h3 className="revolution_title">
-                      PR and gifting reimagined
+                      PR and Gifting Reimagined
                     </h3>
                     <h6 className="revolution_description">
                       Select those that matter to your business. Build a partner
@@ -122,7 +122,7 @@ const Revolution = () => {
                 <Accordion.Item eventKey="1">
                   <Accordion.Header>
                   <div className="revolution_icon_container d-flex justify-content-between align-items-center">
-                      <h3>View social mentions</h3>
+                      <h3>View Social Mentions</h3>
                       <FontAwesomeIcon
                         icon={faArrowRight}
                         className="arrow_icon"
@@ -143,7 +143,7 @@ const Revolution = () => {
                 <Accordion.Item eventKey="3">
                   <Accordion.Header>
                   <div className="revolution_icon_container d-flex justify-content-between align-items-center">
-                      <h3>Simple monthly payouts</h3>
+                      <h3>Simple Monthly Payouts</h3>
                       <FontAwesomeIcon
                         icon={faArrowRight}
                         className="arrow_icon"
@@ -161,7 +161,7 @@ const Revolution = () => {
                 <Accordion.Item eventKey="2">
                   <Accordion.Header>
                   <div className="revolution_icon_container d-flex justify-content-between align-items-center">
-                      <h3>PR and gifting reimagined</h3>
+                      <h3>PR and Gifting Reimagined</h3>
                       <FontAwesomeIcon
                         icon={faArrowRight}
                         className="arrow_icon"

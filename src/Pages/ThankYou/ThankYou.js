@@ -16,9 +16,9 @@ const ThankYou = () => {
             <div className="image_div">
               <img src={Thankyou} alt="" />
               <h2 class="thank_title">
-                Revolutionize sales and business growth.
+                Revolutionize Sales And Business Growth.
               </h2>
-              <PrimaryButton2 title="Explore" iconState="false" url={'/explore'} />
+              <PrimaryButton2 title="Get Started" iconState="false" url={'/contact'} />
               <p class="thank_description">Thank you for contacting us</p>
             </div>
           </div>
