@@ -216,5 +216,10 @@
         padding-bottom: 20px;
     }
     
-   
+   .contact_section .image_container img  {
+    width: 100%;
+   }
+   .contact_section input {
+    border: 2px solid var(--main-color);
+   }
 }

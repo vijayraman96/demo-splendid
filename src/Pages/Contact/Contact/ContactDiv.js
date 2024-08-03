@@ -122,13 +122,14 @@ const ContactDiv = () => {
                     name="fullName"
                   />
                   <Input
-                    type="numeric"
+                    // type="numeric"
                     id="number"
                     className="form-control"
                     placeholder="Enter your Mobile Number"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.number}
+                    type="number" pattern="[0-9]*"
                     error={
                       formik.touched.number ? formik.errors.number : undefined
                     }

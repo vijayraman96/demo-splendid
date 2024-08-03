@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import FourFunnelImg from '../../../assets/images/four-funnel.jpg';
 import './FourFunnel.css'
+import Circle from './../../../assets/images/circle.svg'
 const FourFunnel = () => {
   return (
     <div className="funnel_section">
@@ -24,10 +25,10 @@ const FourFunnel = () => {
               Build a successful marketing program together. The Next-Gen Social
               Commerce Playbook.
             </h5>
-            <ul>
+            <ul class="funnel_ul">
               <li>
                 <h6 className="approach">
-                  1. Discover High Potential Customers & Creators
+                  <span className="animating ">1. </span> Discover High Potential Customers & Creators
                 </h6>
                 <p className="para">
                   Splendid Plugin syncs with any online POS to integrate orders,
@@ -38,7 +39,7 @@ const FourFunnel = () => {
               </li>
               <li>
                 <h6 className="approach">
-                  2.  Engage With Our Creator Match Making Tool
+                 <span className="animating">2.</span>  Engage With Our Creator Match Making Tool
                 </h6>
                 <p className="para">
                 Our proprietary authenticity algorithm grades creators, followers, and customers based on brand compatibility and engagement.
@@ -46,7 +47,7 @@ const FourFunnel = () => {
               </li>
               <li>
                 <h6 className="approach">
-                  3.  Enable Customers And Creators To Represent & Sell
+                  <span className="animating">3.</span> Enable Customers And Creators To Represent & Sell
                 </h6>
                 <p className="para">
                 Brands can empower creators with products and media assets, enabling them to earn commission on sales and through pay-per-click
@@ -54,7 +55,7 @@ const FourFunnel = () => {
               </li>
               <li>
                 <h6 className="approach">
-                  4.  Collaborate For Campaigns, Gifting And  With Like Minded Brands
+                  <span className="animating">4.</span>  Collaborate For Campaigns, Gifting And  With Like Minded Brands
                 </h6>
                 <p className="para pb-0">
                 Splendid facilitates brand-brand, brand-creator, and creator-creator collaborations, multiplying engagement and ROI.
