@@ -36,10 +36,10 @@ const Footer = () => {
             </Col>
             <Col sm={12} md={4}>
                 <div className="footer_title">
-                    <h5>Useful links</h5>
+                    <h5>Useful Links</h5>
                     <ul className='footer_links'>
-                        <li><a onClick={() => navigate('/creator')}>I am a Creator</a></li>
-                        <li><a onClick={() => navigate('/')}>I am a Brand</a></li>
+                        <li><a onClick={() => navigate('/creator')}>I Am A Creator</a></li>
+                        <li><a onClick={() => navigate('/')}>I Am A Brand</a></li>
                         <li><a onClick={() => navigate('/about')}>About</a></li>
                         <li><a href="mailto:hello@splendid.app">hello@splendid.app</a></li>
                     </ul>
@@ -55,7 +55,7 @@ const Footer = () => {
                     </ul>
 
                     <div className='address'>
-                        <p><span>ADDRESS: </span>235, Binnamangala, 2nd Floor 13th Cross Road, 2nd Stage Indiranagar (Bangalore) Bangalore North Bangalore, Karnataka, 560038, INDIA</p>
+                        <p><span>Address: </span>235, Binnamangala, 2nd Floor 13th Cross Road, 2nd Stage Indiranagar (Bangalore) Bangalore North Bangalore, Karnataka, 560038, INDIA</p>
                     </div>
                 </div>
             </Col>

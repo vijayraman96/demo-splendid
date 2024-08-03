@@ -18,7 +18,7 @@ const ThankYou = () => {
               <h2 class="thank_title">
                 Revolutionize Sales And Business Growth.
               </h2>
-              <PrimaryButton2 title="Get Started" iconState="false" url={'/contact'} />
+              <PrimaryButton2 title="Go to Home" iconState="false" url={'/'} />
               <p class="thank_description">Thank you for contacting us</p>
             </div>
           </div>

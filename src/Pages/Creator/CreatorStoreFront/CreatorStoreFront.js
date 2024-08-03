@@ -28,7 +28,7 @@ const CreatorStoreFront = () => {
             <Col lg={6} sm={12} className='right_div'>
                 <div className='store_div'>
                     <img src={CurateDigital} onClick={() => navigateFunction('creator-storefront#digital_storefront')}/>
-                    <h4>Curate a Digital Storefront.​</h4>
+                    <h4>Curate A Digital Storefront.​</h4>
                     <SecondaryButton title="Read More" url={'/creator-storefront#digital_storefront'}/>
                 </div>
 

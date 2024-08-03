@@ -27,7 +27,7 @@ const FourFunnel = () => {
             <ul>
               <li>
                 <h6 className="approach">
-                  1. Discover high potential customers & creators
+                  1. Discover High Potential Customers & Creators
                 </h6>
                 <p className="para">
                   Splendid Plugin syncs with any online POS to integrate orders,
@@ -38,7 +38,7 @@ const FourFunnel = () => {
               </li>
               <li>
                 <h6 className="approach">
-                  2.  Engage with our creator match making tool
+                  2.  Engage With Our Creator Match Making Tool
                 </h6>
                 <p className="para">
                 Our proprietary authenticity algorithm grades creators, followers, and customers based on brand compatibility and engagement.
@@ -46,7 +46,7 @@ const FourFunnel = () => {
               </li>
               <li>
                 <h6 className="approach">
-                  3.  Enable customers and creators to represent & sell
+                  3.  Enable Customers And Creators To Represent & Sell
                 </h6>
                 <p className="para">
                 Brands can empower creators with products and media assets, enabling them to earn commission on sales and through pay-per-click
@@ -54,7 +54,7 @@ const FourFunnel = () => {
               </li>
               <li>
                 <h6 className="approach">
-                  4.  Collaborate for campaigns, gifting and  with like minded brands
+                  4.  Collaborate For Campaigns, Gifting And  With Like Minded Brands
                 </h6>
                 <p className="para pb-0">
                 Splendid facilitates brand-brand, brand-creator, and creator-creator collaborations, multiplying engagement and ROI.

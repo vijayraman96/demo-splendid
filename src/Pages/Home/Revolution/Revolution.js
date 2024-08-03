@@ -78,7 +78,7 @@ const Revolution = () => {
                 <div className="li_container">
                   <div className="content">
                     <h3 className="revolution_title">
-                      PR and Gifting Reimagined
+                      PR And Gifting Reimagined
                     </h3>
                     <h6 className="revolution_description">
                       Select those that matter to your business. Build a partner
