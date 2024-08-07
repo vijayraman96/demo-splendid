@@ -54,7 +54,7 @@ const ContactDiv = () => {
     onSubmit: async(values, { resetForm }) => {
       try {
         const response = await axios.post(
-          "https://qcsdzjvfg22gbmdmod32msvvwq0jqyex.lambda-url.ap-south-1.on.aws/api/application/v1/brand-application/add",
+          "https://api.splendid.app/api/application/v1/brand-application/add",
           {
             brand_name: formik.values.fullName,
             business_email: formik.values.email,
