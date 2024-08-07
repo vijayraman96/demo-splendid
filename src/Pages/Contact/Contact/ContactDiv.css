@@ -87,15 +87,21 @@
     color: var(--main-color);
     transition: all 0.3s;
 }
+.contact_section input {
+    border: 2px solid var(--main-color) !important;
+   }
+   .contact_section input:focus, .contact_section input:hover {
+    border: 2px solid var(--main-color) !important;
+   }
 @media(min-width: 1601px ) {
     .contact_section .image_container .title {
         top: 7%;
-        left: 24%;
+        left: 19%;
         transform: translateX(-8%);
     }
     .contact_section .image_container .para {
         top: 14%;
-        left: 24%;
+        left: 20%;
         transform: translateX(-8%);
     }
     .contact_section .image_container img {

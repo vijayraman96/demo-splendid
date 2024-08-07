@@ -17,6 +17,19 @@ const ContactDiv = () => {
     const domain = email.split('@')[1];
   return domain && domain.includes('.');
   };
+  const handleChange = (event) => {
+    if (event.key === 'ArrowUp' || event.key === 'ArrowDown') {
+      event.preventDefault();
+    }
+    const { value } = event.target;
+    // Allow only positive digits
+    if (value === '' || /^[0-9]+$/.test(value)) {
+      formik.setFieldValue('number', value);
+    }
+  };
+  const handleKeyDown = (event) => {
+    
+  };
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -36,10 +49,7 @@ const ContactDiv = () => {
           })
         .required("Email is required"),
       fullName: Yup.string().required("Please enter your Full Name"),
-      number: Yup.string().matches(
-        new RegExp("[0-9]{10}"),
-        "Enter valid number"
-      ),
+      number: Yup.string().matches(/^[0-9]+$/),
     }),
     onSubmit: async(values, { resetForm }) => {
       try {
@@ -122,20 +132,21 @@ const ContactDiv = () => {
                     name="fullName"
                   />
                   <Input
-                    // type="numeric"
-                    id="number"
+                  
+                    id="text"
                     className="form-control"
                     placeholder="Enter your Mobile Number"
-                    onChange={formik.handleChange}
+                   onChange={handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.number}
-                    type="number" pattern="[0-9]*"
+                    type="text" pattern="[0-9]*"
                     error={
                       formik.touched.number ? formik.errors.number : undefined
                     }
                     maxlength="200"
                     title="Mobile Number"
                     name="number"
+                    onKeyDown={handleKeyDown}
                   />
                   <Input
                     type="text"

@@ -20,7 +20,8 @@
     text-align: left;
 }
 .content_div {
-    padding: 0 0 0 var(--div-left-padding);
+    /* padding: 0 0 0 var(--div-left-padding); */
+    padding: 0 0 0 30px
 }
 .content_div .sub_title{
     padding: var(--sub-title-padding);
@@ -46,6 +47,115 @@ li p {
     text-align: left;
     padding: 10px 0;
 }
+.funnel_ul li .approach {
+    transform: scale(1);
+    transition: all 0.3s;
+}
+.funnel_ul li:hover .approach{
+    /* transform: scale(1.05);
+    color: var(--orange-color);
+    transform: all 0.3s; */
+}
+.funnel_ul li .animating {
+    width:25px !important;
+    height: 25px !important;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    display: inline-block;
+    text-align: center;
+    padding: 2px;
+    color: var(--main-color);
+    position: relative;
+    margin: 0 10px 0 0
+}
+.funnel_ul li:hover .animating {
+    border: 2px solid var(--orange-color);
+}
+.funnel_ul li:hover .animating{
+    /* border: 2px solid var(--orange-color) !important;
+    border-radius: 50%;
+    padding: 0px;
+    transform: scale(1.02);
+    transition: all 0.3s;
+    color: var(--orange-color);
+    position: relative; */
+   
+}
+.funnel_ul li .approach {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.funnel_ul li .animating::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: var(--main-color);
+    z-index: 5;
+    display: inline-block;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    position: absolute; 
+    
+    transform: translate(-50%, -50%);
+}
+.funnel_ul li:hover .animating::before {
+    background-color: var(--orange-color);
+}
+.funnel_ul li:hover .approach {
+    color: var(--orange-color);
+}
+.funnel_ul li .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 16px;
+    color: #fff;
+    /* border: 2px solid var(--main-color); */
+    z-index: 5;
+    transform: translate(-50%, -50%);
+
+    /* display: none; */
+}
+.funnel_ul li:hover .number {
+    /* position: absolute; */
+    font-size: 18px;
+    /* transform: all 0.3s; */
+    color: #fff;
+    /* transform: all 0.3s; */
+    /* top: 2px;
+    left: 6px; */
+    display: block;
+}
+
+/* .funnel_ul li:nth-child(4):hover .number {
+    top: 2.5px;
+    left: 6px;
+} */
+/* .funnel_ul li .animating::after {
+    content: "1";
+
+} */
+/* .funnel_ul li:hover .animating::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--orange-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    position: absolute;
+} */
+/* .funnel_ul li:hover .approach {
+    transform: scale(1.03);
+
+    color: var(--orange-color);
+
+}  */
 /* .funnel_ul li span.animating { */
     /* transform: scale(1);
     transition: transform 1s; 
@@ -109,20 +219,27 @@ li p {
     transform : translate(-50%, -50%);
     font-style: normal;
 }
+.funnel_ul li:nth-child(4) .animating {
+    width: 28px !important
+}
 @media(min-width: 1600px) {
+    li {
+        padding: 10px 0 0 0;
+    }
     li p {
-        font-size: 18px;;
+        font-size: 16px;;
         padding:13px 0
     }
     .image_container img {
-        height: 810px !important;
-        width: 92% !important;
+        height: 790px !important;
+        width: 100% !important;
         object-fit: cover;
     }
     .funnel_section .row {
         padding: 0 !important;
         margin: 0 0px !important;
     }
+    
     
 }
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -181,6 +298,13 @@ li p {
     .funnel_section .col-md-6 {
         width: 100% !important
     }
+    .funnel_ul li:nth-child(4) .animating {
+        width: 25px !important
+    }
+    .funnel_ul li:nth-child(4):hover .number {
+        top: 2.5px;
+        left: 3px;
+    }
 }
 @media(min-width: 1201px) {
     .funnel_section .row {
@@ -198,11 +322,21 @@ li p {
    .title {
     line-height: 40px;;
    }
+   .funnel_ul li:nth-child(4) .animating {
+    width: 35px !important
+}
+.funnel_ul li:nth-child(3) .animating {
+    width: 32px !important
+}
    .funnel_section .image_container img {
     height: auto;
     width: 100%;
     margin: 40px 0 10px 0;
    }
+   .funnel_ul li .animating {
+    width:27px !important;
+    height: 22px;
+}
 }
 @media(min-width: 1201px) and (max-width: 1500px) {
     .funnel_section .row {
@@ -210,7 +344,7 @@ li p {
         /* margin: 0 0px !important; */
     }
     .funnel_section .image_container img {
-        height: 700px;
+        height: 730px;
         width: 100%;
         object-fit: cover;
         margin: 10px 0 0 0;

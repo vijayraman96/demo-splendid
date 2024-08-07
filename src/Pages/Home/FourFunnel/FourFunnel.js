@@ -28,18 +28,18 @@ const FourFunnel = () => {
             <ul class="funnel_ul">
               <li>
                 <h6 className="approach">
-                  <span className="animating ">1. </span> Discover High Potential Customers & Creators
+                  <span className="animating"><span className="number">1</span> </span> Discover High Potential Customers & Creators
                 </h6>
                 <p className="para">
                   Splendid Plugin syncs with any online POS to integrate orders,
                   track campaigns, convert customers, and create marketing
                   lists. A Splendid link acts as a discovery phase catalyst by
-                  connecting customers to
+                  connecting customers to brands.
                 </p>
               </li>
               <li>
                 <h6 className="approach">
-                 <span className="animating">2.</span>  Engage With Our Creator Match Making Tool
+                 <span className="animating"><span className="number">2</span></span>  Engage With Our Creator Match Making Tool
                 </h6>
                 <p className="para">
                 Our proprietary authenticity algorithm grades creators, followers, and customers based on brand compatibility and engagement.
@@ -47,7 +47,7 @@ const FourFunnel = () => {
               </li>
               <li>
                 <h6 className="approach">
-                  <span className="animating">3.</span> Enable Customers And Creators To Represent & Sell
+                  <span className="animating"><span className="number">3</span></span> Enable Customers And Creators To Represent & Sell
                 </h6>
                 <p className="para">
                 Brands can empower creators with products and media assets, enabling them to earn commission on sales and through pay-per-click
@@ -55,7 +55,7 @@ const FourFunnel = () => {
               </li>
               <li>
                 <h6 className="approach">
-                  <span className="animating">4.</span>  Collaborate For Campaigns, Gifting And  With Like Minded Brands
+                  <span className="animating"><span className="number">4</span></span>  Collaborate For Campaigns, Gifting And  With Like Minded Brands
                 </h6>
                 <p className="para pb-0">
                 Splendid facilitates brand-brand, brand-creator, and creator-creator collaborations, multiplying engagement and ROI.
