@@ -53,7 +53,7 @@ const Footer = () => {
                         <li><a onClick={() => navigate('/privacy-policy')}>Privacy & Policy</a></li>
                      
                     </ul>
-
+                    <h6 className='pvtLtd'>Splendid App Private Limited</h6>
                     <div className='address'>
                         <p><span>Address: </span>235, Binnamangala, 2nd Floor 13th Cross Road, 2nd Stage Indiranagar (Bangalore) Bangalore North Bangalore, Karnataka, 560038, INDIA</p>
                     </div>

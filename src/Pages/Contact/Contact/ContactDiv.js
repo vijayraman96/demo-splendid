@@ -50,6 +50,12 @@ const ContactDiv = () => {
         .required("Email is required"),
       fullName: Yup.string().required("Please enter your Full Name"),
       number: Yup.string().matches(/^[0-9]+$/),
+      site_url: Yup.string()
+      .required("Please enter shopify link")
+      .matches(
+        /^(https:\/\/[a-zA-Z0-9-_]+\.myshopify\.com\/admin+.*|https:\/\/admin\.shopify\.com\/store\/[a-zA-Z0-9-_]+.*)$/,
+        "Invalid shopify link"
+      ),
     }),
     onSubmit: async(values, { resetForm }) => {
       try {
@@ -152,7 +158,7 @@ const ContactDiv = () => {
                     type="text"
                     id="siteUrl"
                     className="form-control"
-                    placeholder="Enter your Site Url"
+                    placeholder="Enter your Shopify Admin Url"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.site_url}
@@ -162,7 +168,7 @@ const ContactDiv = () => {
                         : undefined
                     }
                     //   maxlength="200"
-                    title="Site Url"
+                    title="Shopify Admin Url"
                     name="site_url"
                   />
                   <Input

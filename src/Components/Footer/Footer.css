@@ -86,6 +86,11 @@
     padding-top: 50px !important;;
     margin-top: 50px;
 }
+.pvtLtd {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 10px 0 15px 0;
+}
 @media(max-width: 768px) {
     .footer_title, .footer_agreement {
         width: 100%;

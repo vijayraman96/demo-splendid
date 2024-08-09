@@ -8,16 +8,12 @@ import { brandData } from "./brandData";
 import "./BrandDiv.css";
 import { useLocation } from 'react-router-dom';
 const BrandDiv = () => {
-  console.log("data", brandData);
   const refs = useRef({});
   const location = useLocation();
 
   useEffect(() => {
     const hash = location.hash.substring(1); // Remove the leading '#'
-    console.log("Hash:", hash);
-    console.log("Refs:", refs.current);
     if (hash && refs.current[hash]) {
-      console.log("Scrolling to:", refs.current[hash]);
       refs.current[`${hash}`].scrollIntoView({ behavior: "smooth" });
     }
   }, [location]);
