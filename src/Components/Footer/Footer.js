@@ -51,7 +51,7 @@ const Footer = () => {
                     <ul className='footer_links'>
                         <li><a onClick={() => navigate('/terms-conditions')}>Terms & Conditions</a></li>
                         <li><a onClick={() => navigate('/privacy-policy')}>Privacy & Policy</a></li>
-                        <li><a onClick={() => navigate('/terms-of-use')}>Terms of Use</a></li>
+                        <li><a onClick={() => navigate('/terms-of-use')}>Terms Of Use</a></li>
 
                      
                     </ul>
