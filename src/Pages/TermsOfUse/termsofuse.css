@@ -1,0 +1,21 @@
+.terms_section .terms{
+    padding: 150px 0 100px 0;
+    text-align: left;
+}
+.terms h6 {
+    line-height: 25px;;
+}
+.terms .buttonDiv p {
+    padding: 0;
+    text-align: center;
+}
+.terms p {
+    padding: 15px 0;
+}
+.terms ul {
+    list-style-type: disc;
+    padding-inline-start: 20px;;
+}
+.terms_section .footer-section {
+    text-align: center;
+}

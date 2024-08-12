@@ -10,8 +10,9 @@ import Store from "../../Pages/StoreFront/Store";
 import Explore from "../../Pages/Explore/Explore";
 import About from "../../Pages/About/About";
 import Privacy from "../../Pages/Privacy/Privacy";
-import Terms from "../../Pages/Terms/Terms";
 import ExploreBrand from "../../Pages/ExploreBrand/ExploreBrand";
+import TermsAndConditions from "../../Pages/TermsAndConditions/TermsAndConditions";
+import TermsOfUse from "../../Pages/TermsOfUse/TermsOfUse";
 
 // const router = createBrowserRouter([
 //   {
@@ -101,10 +102,13 @@ const router = () => {
           <Route index={true} element={<About />} />
         </Route>
         <Route path="/terms-conditions">
-          <Route index={true} element={<Terms />} />
+          <Route index={true} element={<TermsAndConditions />} />
         </Route>
         <Route path="/privacy-policy">
           <Route index={true} element={<Privacy />} />
+        </Route>
+        <Route path="/terms-of-use">
+          <Route index={true} element={<TermsOfUse />} />
         </Route>
       </Routes>
     </Router>

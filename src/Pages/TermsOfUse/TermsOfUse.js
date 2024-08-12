@@ -2,10 +2,10 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
-import "./Terms.css";
+import "./termsofuse.css";
 import { Row, Col } from "react-bootstrap";
 
-const Terms = () => {
+const TermsOfUse = () => {
   return (
     <div className="terms_section">
       <div className="terms">
@@ -514,4 +514,4 @@ const Terms = () => {
   );
 };
 
-export default Terms;
+export default TermsOfUse;

@@ -51,6 +51,8 @@ const Footer = () => {
                     <ul className='footer_links'>
                         <li><a onClick={() => navigate('/terms-conditions')}>Terms & Conditions</a></li>
                         <li><a onClick={() => navigate('/privacy-policy')}>Privacy & Policy</a></li>
+                        <li><a onClick={() => navigate('/terms-of-use')}>Terms of Use</a></li>
+
                      
                     </ul>
                     <h6 className='pvtLtd'>Splendid App Private Limited</h6>
