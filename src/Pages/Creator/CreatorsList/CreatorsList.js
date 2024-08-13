@@ -39,7 +39,7 @@ const CreatorsList = () => {
 
   return (
     <div className="creators-list">
-      <h2 className="creators-list-title">Creators who thrive with Splendid</h2>
+      <h2 className="creators-list-title">Creators On Splendid!</h2>
       <div className="alphabets">
         {alphabets.map((letter) => (
           <button
