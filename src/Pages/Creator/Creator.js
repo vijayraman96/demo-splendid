@@ -4,6 +4,7 @@ import Footer from '../../Components/Footer/Footer';
 import Banner from '../../Components/Banner/Banner';
 import "./Creator.css";
 import CreatorStoreFront from './CreatorStoreFront/CreatorStoreFront';
+import CreatorsList from './CreatorsList/CreatorsList';
 
 const Creator = () => {
   return (
@@ -19,6 +20,7 @@ const Creator = () => {
         secondaryUrl={'/'}
       />
       <CreatorStoreFront />
+      <CreatorsList />
       <Footer />
     </div>
   )

@@ -28,7 +28,6 @@ function useGetBrandList(preLoad = false) {
         data.getAllBrandList.brands &&
         data.getAllBrandList.brands.length > 0
       ) {
-        // console.log("getAuthorList Success", data.getAuthorList);
         setBrandList([]);
         setBrandList(data.getAllBrandList.brands);
         setLoading(false);

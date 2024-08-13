@@ -1,5 +1,5 @@
 // import { toast } from "react-toastify";
-import ClientProvider from "./ApolloService";
+import ClientProvider, { ProfileService } from "./ApolloService";
 
 const graphHandler = () => {
   let inProgress = false;
@@ -54,6 +54,9 @@ const graphHandler = () => {
       switch (serviceType) {
         case 0:
           service = ClientProvider;
+          break;
+        case 1:
+          service= ProfileService;
           break;
         default:
           break;

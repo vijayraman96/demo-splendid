@@ -473,3 +473,127 @@ export const GET_USER_ACTIVITY_CONTENT_LIST_GQL = gql`
     }
   }
 `;
+
+export const GET_ALL_CREATOR_LIST_GQL = gql`
+  query getAllCreatorList(
+    $active: Boolean
+    $pagination: PaginationFilter
+    $dateFilter: DateFilter
+    $user_ids: [String!]
+    $user_types: [UserType!]
+    $name: String
+    $first_name: String
+    $last_name: String
+    $mobile_number: String
+    $email: String
+    $mobile_number_verified: Boolean
+    $email_verified: Boolean
+    $gender: Gender
+    $dob: String
+    $country_id: String
+    $city_id: String
+  ) {
+    getAllCreatorList(
+      active: $active
+      pagination: $pagination
+      dateFilter: $dateFilter
+      user_ids: $user_ids
+      user_types: $user_types
+      name: $name
+      first_name: $first_name
+      last_name: $last_name
+      mobile_number: $mobile_number
+      email: $email
+      mobile_number_verified: $mobile_number_verified
+      email_verified: $email_verified
+      gender: $gender
+      dob: $dob
+      country_id: $country_id
+      city_id: $city_id
+    ) {
+      status
+      error
+      message
+      version
+      service
+      pagination {
+        page_number
+        item_count
+        total_count
+      }
+      creators {
+        user {
+          created_at
+          created_by
+          updated_at
+          updated_by
+          user_id
+          user_types
+          user_name
+          first_name
+          last_name
+          gender
+          dob
+          mobile_number
+          mobile_number_verified
+          email
+          email_verified
+          address {
+            label
+            mobile_number
+            line_1
+            line_2
+            region
+            town_city
+            postcode
+            state_id
+            country_id
+          }
+          profile_images {
+            image_url_id
+            key
+            sort_order
+            image_type
+            url
+          }
+          social_urls {
+            provider
+            link
+          }
+          alternate_email
+          country_id
+          state_id
+          city_id
+          active
+        }
+        creator {
+          created_at
+          created_by
+          updated_at
+          updated_by
+          user_id
+          email
+          creator_handle
+          creator_description
+          secondary_social_links {
+            provider
+            link
+          }
+          primary_social_links {
+            provider
+            link
+          }
+          languages
+          favourite_category_ids
+          device_id
+          city_id
+          password
+          creator_grade
+          active
+          affliate_listing
+          campaigns
+        }
+      }
+    }
+  }
+`;

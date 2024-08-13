@@ -1,4 +1,9 @@
-import { ApolloClient, InMemoryCache, ApolloProvider, HttpLink } from '@apollo/client';
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  HttpLink,
+} from "@apollo/client";
 // import { ApolloClient, InMemoryCache } from "@apollo/client";
 
 // class CommonDataManager {
@@ -46,7 +51,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider, HttpLink } from '@apollo/c
 //     }
 //     return this.applicationClient;
 //   }
-  
+
 //   getLicense() {
 //     if (this.licenseClient == null) {
 //       this.licenseClient = new ApolloClient({
@@ -111,13 +116,21 @@ import { ApolloClient, InMemoryCache, ApolloProvider, HttpLink } from '@apollo/c
 // }
 // export default CommonDataManager.getInstance();
 
-
 const ClientProvider = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://qcsdzjvfg22gbmdmod32msvvwq0jqyex.lambda-url.ap-south-1.on.aws/api/application/graphql',
-    useGETForQueries: true,  // Optionally force the use of GET requests for queries
+    uri: "https://qcsdzjvfg22gbmdmod32msvvwq0jqyex.lambda-url.ap-south-1.on.aws/api/application/graphql",
+    useGETForQueries: true, // Optionally force the use of GET requests for queries
   }),
   cache: new InMemoryCache(),
 });
 
 export default ClientProvider;
+
+export const ProfileService = new ApolloClient({
+  link: new HttpLink({
+    // uri: "https://szsjvegyj7nakddczwbh6mtwya0urpsf.lambda-url.ap-south-1.on.aws/api/profile/graphql", //dev
+    uri: "https://api.splendid.app/api/profile/graphql",
+    useGETForQueries: true,
+  }),
+  cache: new InMemoryCache(),
+});
