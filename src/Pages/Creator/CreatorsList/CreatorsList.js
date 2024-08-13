@@ -11,18 +11,18 @@ const CreatorsList = () => {
   const [filteredNames, setFilteredNames] = useState([]);
   const [enabledLetters, setEnabledLetters] = useState([]);
   const { getAllCreatorList, allCreatorList, loading } = useGetAllCreatorList();
-  const [names, setNames] = useState([]);
-  useEffect(() => {
-    let req = {};
-    getAllCreatorList(req);
-  }, []);
-  useEffect(() => {
-    setNames(
-      allCreatorList.map((x) =>
-        x?.user?.first_name ? x?.user?.first_name : ""
-      )
-    );
-  }, [allCreatorList]);
+  const [names, setNames] = useState(["Arshita"]);
+  // useEffect(() => {
+  //   let req = {};
+  //   getAllCreatorList(req);
+  // }, []);
+  // useEffect(() => {
+  //   setNames(
+  //     allCreatorList.map((x) =>
+  //       x?.user?.first_name ? x?.user?.first_name : ""
+  //     )
+  //   );
+  // }, [allCreatorList]);
   useEffect(() => {
     const filtered = names.filter((x) =>
       x.toLowerCase().startsWith(selectedLetter.toLowerCase())
@@ -55,7 +55,16 @@ const CreatorsList = () => {
       <div className="creator-names">
         {filteredNames.length > 0 ? (
           filteredNames.map((name, index) => (
-            <p key={index} className="creator-name">
+            <p
+              key={index}
+              className="creator-name"
+              onClick={() =>
+                window.open(
+                  "https://customer.splendid.app/#/arshita_cosmetic",
+                  "_blank"
+                )
+              }
+            >
               {name}
             </p>
           ))
