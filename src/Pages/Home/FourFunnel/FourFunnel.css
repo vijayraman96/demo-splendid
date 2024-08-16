@@ -337,6 +337,24 @@ li p {
     width:27px !important;
     height: 22px;
 }
+.highlighted, .highlighted .animating .number {
+    color: var(--orange-color);
+}
+.highlighted .animating {
+    border: 2px solid var(--orange-color) !important;
+}
+.highlighted .animating .number {
+    color: #fff;
+}
+.highlighted .animating::before {
+    background-color: var(--orange-color) !important;
+}
+.funnel_ul li:hover .animating::before {
+    background-color: var(--orange-color);
+}
+.funnel_ul li:hover .approach {
+    color: var(--orange-color);
+}
 }
 @media(min-width: 1201px) and (max-width: 1500px) {
     .funnel_section .row {

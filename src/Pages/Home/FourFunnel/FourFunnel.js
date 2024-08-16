@@ -1,9 +1,32 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";     
 import FourFunnelImg from '../../../assets/images/four-funnel.jpg';
 import './FourFunnel.css'
 import Circle from './../../../assets/images/circle.svg'
+import { useEffect, useRef, useState } from "react";
 const FourFunnel = () => {
+  const listRef = useRef([]);
+  const [highlightedIndex, setHighlightedIndex] = useState(null);
+  useEffect(() => {
+    const handleScroll = () => {
+      listRef.current.forEach((item, index) => {
+        if (item) {
+          const rect = item.getBoundingClientRect();
+
+          // Check if the element has moved up by at least 150px
+          if (rect.top <= 400 && rect.bottom > 250) {
+            setHighlightedIndex(index);
+          }
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <div className="funnel_section">
       <Container>
@@ -27,7 +50,7 @@ const FourFunnel = () => {
             </h5>
             <ul class="funnel_ul">
               <li>
-                <h6 className="approach">
+                <h6  ref={(el) => (listRef.current[0] = el)} className={highlightedIndex === 0 ? 'highlighted approach' : 'normal approach'}>
                   <span className="animating"><span className="number">1</span> </span> Discover High Potential Customers & Creators
                 </h6>
                 <p className="para">
@@ -38,7 +61,7 @@ const FourFunnel = () => {
                 </p>
               </li>
               <li>
-                <h6 className="approach">
+                <h6 ref={(el) => (listRef.current[1] = el)} className={highlightedIndex === 1 ? 'highlighted approach' : 'normal approach'}>
                  <span className="animating"><span className="number">2</span></span>  Engage With Our Creator Match Making Tool
                 </h6>
                 <p className="para">
@@ -46,7 +69,7 @@ const FourFunnel = () => {
                 </p>
               </li>
               <li>
-                <h6 className="approach">
+                <h6 ref={(el) => (listRef.current[2] = el)} className={highlightedIndex === 2 ? 'highlighted approach' : 'normal approach'}>
                   <span className="animating"><span className="number">3</span></span> Enable Customers And Creators To Represent & Sell
                 </h6>
                 <p className="para">
@@ -54,7 +77,7 @@ const FourFunnel = () => {
                 </p>
               </li>
               <li>
-                <h6 className="approach">
+                <h6 ref={(el) => (listRef.current[3] = el)} className={highlightedIndex === 3 ? 'highlighted approach' : 'normal approach'}>
                   <span className="animating"><span className="number">4</span></span>  Collaborate For Campaigns, Gifting And  With Like Minded Brands
                 </h6>
                 <p className="para pb-0">
