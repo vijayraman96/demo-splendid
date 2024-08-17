@@ -96,10 +96,15 @@
     padding: 30px 0 0 0;
 }
 .help_section input {
+    font-size: 16px;;
     /* border: 2px solid transparent !important; */
    }
    .help_section input:focus, .help_section input:hover {
-    /* border: 2px solid var(--main-color) !important; */
+    /* 
+    border: 2px solid var(--main-color) !important; */
+   }
+   .help_section .react-dropdown-select-input {
+    margin: 0;
    }
 @media(min-width: 1601px ) {
     .help_section .image_container .title {

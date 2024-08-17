@@ -18,6 +18,7 @@
     padding: 0 15px;
     background-color: #fff;
     color: var(--main-color);
+    font-family: "Roboto", sans-serif;
 }
 .error {
     font-size: 10px;

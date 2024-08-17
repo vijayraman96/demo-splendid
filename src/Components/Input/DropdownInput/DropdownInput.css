@@ -34,6 +34,7 @@ select {
     padding: 0 15px !important;
     background-color: #fff !important;
     color: var(--main-color) !important;
+    font-family: "Roboto", sans-serif;
     
 }
 .react-dropdown-select-input {
