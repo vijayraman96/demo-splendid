@@ -1,0 +1,30 @@
+.textarea_div {
+    width: var( --input-width);
+    margin: var(--input-div-padding) 0;
+  }
+  
+  .textarea_title {
+    font-size: var(--input-font);
+    line-height: var(--input-font-height);
+    font-weight: var(--fw-700);
+    text-align: left;
+    padding: 0 0 5px 0;
+  }
+  
+  .textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid var(--main-color);
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  /* .textarea.error {
+    border-color: red;
+  } */
+  
+  .error_message {
+    color: red;
+    margin-top: 0.5rem;
+  }
+  

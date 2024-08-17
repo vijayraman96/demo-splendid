@@ -13,6 +13,7 @@ import Privacy from "../../Pages/Privacy/Privacy";
 import ExploreBrand from "../../Pages/ExploreBrand/ExploreBrand";
 import TermsAndConditions from "../../Pages/TermsAndConditions/TermsAndConditions";
 import TermsOfUse from "../../Pages/TermsOfUse/TermsOfUse";
+import Help from "../../Pages/Help/Help";
 
 // const router = createBrowserRouter([
 //   {
@@ -109,6 +110,9 @@ const router = () => {
         </Route>
         <Route path="/terms-of-use">
           <Route index={true} element={<TermsOfUse />} />
+        </Route>
+        <Route path="/help">
+          <Route index={true} element={<Help />} />
         </Route>
       </Routes>
     </Router>

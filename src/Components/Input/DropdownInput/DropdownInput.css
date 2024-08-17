@@ -1,0 +1,47 @@
+.dropdown_input_div {
+    width: var( --input-width);
+    margin: var(--input-div-padding) 0;
+    height: 90px;
+}
+.dropdown_title {
+    font-size: var(--input-font);
+    line-height: var(--input-font-height);
+    font-weight: var(--fw-700);
+    text-align: left;
+    padding: 0 0 5px 0;
+}
+select {
+    height: var(--input-field-height);
+    width: 100%;
+    border-radius: var(--button-border-radius);
+    border: var(--button-border);
+    padding: 0 15px;
+    background-color: #fff;
+    color: var(--main-color);
+}
+.error {
+    font-size: 10px;
+    color: rgb(251, 92, 92);
+    line-height: 15px;
+    padding: 5px  0 0 0;
+    text-align: left;
+}
+.react-dropdown-select,.react-dropdown-select:focus  {
+    height: var(--input-field-height) !important;
+    width: 100%;
+    border-radius: var(--button-border-radius) !important;
+    border: var(--button-border) !important;
+    padding: 0 15px !important;
+    background-color: #fff !important;
+    color: var(--main-color) !important;
+    
+}
+.react-dropdown-select-input {
+    border: transparent !important;
+}
+
+@media(max-width: 1200px) {
+    select {
+        border: var(--button-border) !important;
+    }
+}
