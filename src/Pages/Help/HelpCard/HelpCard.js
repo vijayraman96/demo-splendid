@@ -134,7 +134,7 @@ const HelpCard = () => {
                     type="email"
                     id="email"
                     className="form-control"
-                    placeholder="Enter your Work Email"
+                    placeholder="Enter your Email"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.email}
@@ -142,7 +142,7 @@ const HelpCard = () => {
                       formik.touched.email ? formik.errors.email : undefined
                     }
                     maxlength="200"
-                    title="Work Email"
+                    title="Email"
                     name="email"
                   />
 
