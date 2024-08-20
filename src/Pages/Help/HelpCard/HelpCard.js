@@ -47,6 +47,7 @@ const HelpCard = () => {
       user_type: "",
       reason: "",
       message: "",
+      link: ''
     },
     validationSchema: Yup.object().shape({
       email: Yup.string()
@@ -62,6 +63,9 @@ const HelpCard = () => {
       number: Yup.string().matches(/^[0-9]+$/),
       user_type: Yup.string().required("Please enter your User Type"),
       reason: Yup.string().required("Please enter your Reason"),
+      link: Yup.string()
+      .url('Please enter a valid URL')
+      .required('Website URL is required'),
       //   message:  Yup.string().required("Please enter your Reason"),
     }),
     onSubmit: async (values, { resetForm }) => {
@@ -75,7 +79,8 @@ const HelpCard = () => {
             mobile_number: formik.values.number,
             email: formik.values.email,
             message: formik.values.message,
-            reason: formik.values.reason
+            reason: formik.values.reason,
+            creator_store_url: formik.values.link
           }
         );
         const data = response.data;  // response.data contains the actual data
@@ -183,10 +188,27 @@ const HelpCard = () => {
                     onBlur={formik.handleBlur}
                     error={formik.touched.reason && formik.errors.reason}
                   />
+                  <Input
+                    id="link"
+                    className="form-control"
+                    placeholder="Enter your Splendid Link"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.link}
+                    type="text"
+                    error={
+                      formik.touched.link ? formik.errors.link : undefined
+                    }
+                    maxlength="200"
+                    title="Splendid Link"
+                    name="link"
+                 
+                  />
+                 
                   <TextArea
                     name="message"
                     placeholder="Enter your reason briefly here"
-                    title="Message"
+                    title="Tell Us  More"
                     value={formik.values.message}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
