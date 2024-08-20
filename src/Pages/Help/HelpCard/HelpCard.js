@@ -63,9 +63,11 @@ const HelpCard = () => {
       number: Yup.string().matches(/^[0-9]+$/),
       user_type: Yup.string().required("Please enter your User Type"),
       reason: Yup.string().required("Please enter your Reason"),
-      link: Yup.string()
-      .url('Please enter a valid URL')
-      .required('Website URL is required'),
+      // link: Yup.string()
+      // .matches(
+      //  /^(https?:\/\/)?(www\.)?[\w-]+\.[a-z]{2,6}([\/\w-]*)*\/?$/,
+      //   'Invalid URL'
+      // ),
       //   message:  Yup.string().required("Please enter your Reason"),
     }),
     onSubmit: async (values, { resetForm }) => {
