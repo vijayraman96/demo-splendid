@@ -239,10 +239,10 @@ const HelpCard = () => {
                       Submit
                     </button>
                   </div>
-                  <p className="error">{errorMsg}</p>
+                  <h6 className="error">{errorMsg}</h6>
                 </div>
               </form>
-              <p className="error">{errorMsg}</p>
+              {/* <p className="error">{errorMsg}</p> */}
               <h6 className="success">{successMsg}</h6>
             </div>
           </Col>
