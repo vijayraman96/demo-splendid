@@ -41,6 +41,7 @@ const Footer = () => {
                         <li><a onClick={() => navigate('/creator')}>I Am A Creator</a></li>
                         <li><a onClick={() => navigate('/')}>I Am A Brand</a></li>
                         <li><a onClick={() => navigate('/about')}>About</a></li>
+                        <li><a href="https://app.splendid.app/orders">Track Your Order</a></li>
                         <li><a href="mailto:hello@splendid.app">hello@splendid.app</a></li>
                     </ul>
                 </div>
@@ -48,10 +49,11 @@ const Footer = () => {
             <Col sm={12} md={4}>
                 <div className="footer_agreement">
                     <h5>Splendid User Agreement</h5>
-                    <ul className='footer_links'>
+                    <ul className='footer_links agreement_links'>
                         <li><a onClick={() => navigate('/terms-conditions')}>Terms & Conditions</a></li>
                         <li><a onClick={() => navigate('/privacy-policy')}>Privacy & Policy</a></li>
                         <li><a onClick={() => navigate('/terms-of-use')}>Terms Of Use</a></li>
+                        <li><a onClick={() => navigate('/shipping-policy')}>Shipping Policy</a></li>
 
                      
                     </ul>

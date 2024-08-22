@@ -52,6 +52,7 @@ function NavbarComponent() {
               <Nav className={`ms-auto d-flex align-items-center nav_mob`}>
                 <Nav.Link as={RouterNavLink} to="/" className={isActive('/') ? 'activeMenu' : ''}>For Brand </Nav.Link>
                 <Nav.Link as={RouterNavLink} to="/creator" className={isActive('/creator') ? 'activeMenu' : ''}>For Creator</Nav.Link>
+                <a href="https://app.splendid.app/orders" className="track">Track Your Order</a>
                 <div className="navButtonDiv"> 
                    <PrimaryButton title="Get Started" iconState="false" url={`/contact`}/>
                 </div>
