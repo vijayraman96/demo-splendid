@@ -7,7 +7,7 @@
     border-radius:25px;
     transition: all 0.3s;
     padding-bottom: 20px;
-    height: 650px;
+    height: 600px;
     width: 95%;
     margin:20px 0;
 }
@@ -47,7 +47,7 @@
     line-height: 40px;
     font-weight: 800;
     padding-bottom: 15px;
-    height: 100px;
+    height: 60px;
 }
 .explore_card .title_container a {
     color: var(--main-color);
@@ -125,5 +125,11 @@
         transform: translate(-50%, -50%);
         width: 120px !important;
         height: auto !important
+    }
+}
+@media(max-width: 768px) {
+    
+    .single_brand_page .single_brand_container .banner_container {
+        background-size: contain;
     }
 }

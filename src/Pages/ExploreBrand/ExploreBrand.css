@@ -69,7 +69,7 @@
     border-radius: 5px;
     padding: 3% 5%;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: under;
     font-size: 16px;
     line-height: 22px;
     font-family: "Roboto", sans-serif;
@@ -274,20 +274,33 @@
     }
     .single_brand_page .single_brand_container .card_container .card{
         position: absolute;
-        top: 13% !important;
+        top: 7% !important;
         width: 100%;
         max-width: 100%;
         border-radius: 0;
         box-shadow: none;
         filter: drop-shadow(0px 0px 0px #ffffff);
-        height: 320px;
+        height: 350px;
+        padding: 10% 5%
     }
-    .single_brand_page .single_brand_container .banner_container {
-        margin: 320px 0 0 0;
+    .single_brand_page .single_brand_container .banner_div {
+        height: 300px;
+        margin: 314px 0 0 0;
+    width: 100%;
+    }
+    .single_brand_page .single_brand_container .banner_div .banner_container {
+        margin: 0px 0 0 0;
+        height: 300px
+    }
+    .single_brand_page .single_brand_container .card_container {
+        height: 0;
     }
     .single_brand_page .single_brand_container .card_container .card .content .title {
         font-size: 20px;
         line-height: 30px;;
+    }
+    .single_brand_page .single_brand_container .card_container .card .content .brand_button_container a {
+        text-decoration: none;
     }
     .title_2 {
         max-width: 100% !important;
@@ -316,7 +329,7 @@
         height: auto;
         object-fit: cover;
         border-radius: 30px;;
-        margin: 0 0 100px 0;
+        margin: 0 0 30px 0;
     }
     .single_brand_page .single_brand_footer_container .creator_brand_section .row .col .title {
         display: none;
@@ -325,6 +338,37 @@
         display: block;
     }
     .single_brand_page .single_brand_footer_container .creator_brand_section {
-        padding: 0px !important
+        padding: 0px !important;
+        margin: 0 5%
     }
+    .single_brand_page .single_brand_container .brand_title {
+        margin: 50px 5% 50px 5%;
+    }
+    .single_brand_page .single_brand_container .brand_title .title_2 {
+        font-size: 34px;;
+    }
+    .single_brand_page .single_brand_container .brand_card {
+        margin: 0 5%;
+    }
+    .footer_title2 {
+        font-size: 34px;;
+        text-align: left;
+        padding: 50px 0 0px 0
+    }
+    .single_brand_page .single_brand_footer_container .footer .footer_content {
+        padding: 30px  0  40px 0
+    }
+}
+@media(min-width: 1400px) {
+    .single_brand_page .single_brand_container .card_container .card {
+        width: 700px;
+        max-width: 700px;
+    }
+    
+}
+@media(min-width: 1700px) {
+    .single_brand_page .single_brand_container .brand_card .brand_individual_card img {
+        height: 400px;
+    }
+    
 }

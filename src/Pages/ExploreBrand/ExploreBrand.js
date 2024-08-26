@@ -107,12 +107,15 @@ const ExploreBrand = () => {
           <div className="logo_container">
             <img src={logo} alt="" />
           </div>
+          <div className="banner_div">
           <div
             className="banner_container"
             style={{
               backgroundImage: `url(${banner_image})`,
             }}
           ></div>
+          </div>
+         
           <div className="card_container">
             <div className="card">
               <div className="content">
