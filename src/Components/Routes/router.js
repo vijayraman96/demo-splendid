@@ -15,6 +15,7 @@ import TermsAndConditions from "../../Pages/TermsAndConditions/TermsAndCondition
 import TermsOfUse from "../../Pages/TermsOfUse/TermsOfUse";
 import Help from "../../Pages/Help/Help";
 import Shipping from "../../Pages/ShippingPolicy/Shipping";
+import TrackOrder from '../../Pages/TrackOrder/TrackOrder'
 
 // const router = createBrowserRouter([
 //   {
@@ -95,11 +96,11 @@ const router = () => {
         <Route path="/creator-storefront">
           <Route index={true} element={<Store />} />
         </Route>
-        {/* <Route path="/explore">
+        <Route path="/explore">
           <Route index={true} element={<Explore />} />
           <Route index={false} path="brand/:id" element={<ExploreBrand />} />
-          <Route index={false} path="new" element={<NewTeamForm />} />
-        </Route> */}
+          {/* <Route index={false} path="new" element={<NewTeamForm />} /> */}
+        </Route>
         <Route path="/about">
           <Route index={true} element={<About />} />
         </Route>
@@ -118,9 +119,9 @@ const router = () => {
         <Route path="/shipping-policy">
           <Route index={true} element={<Shipping  />} />
         </Route>
-        {/* <Route path="/track-your-order">
+        <Route path="/track-your-order">
           <Route index={true} element={<TrackOrder  />} />
-        </Route> */}
+        </Route>
       </Routes>
     </Router>
   );

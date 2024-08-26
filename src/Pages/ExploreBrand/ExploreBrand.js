@@ -119,7 +119,7 @@ const ExploreBrand = () => {
                 <h2 className="title">{banner_title}</h2>
                 <p className="para">{banner_description}</p>
                 <div className="brand_button_container">
-                  <a>Sign up Here</a>
+                  <a href="https://play.google.com/store/apps">Sign up Here</a>
                 </div>
               </div>
             </div>

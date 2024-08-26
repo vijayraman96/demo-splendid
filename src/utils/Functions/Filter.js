@@ -18,15 +18,22 @@ export const getImage = (
 };
 
 export const getImageUrl = (meta, type, key, keyName = 'key') => {
-    if (!key || !Array.isArray(meta)) {
-      return "";
-    }
-  
-    const imageItem = meta.find(
-      (item) => item[keyName] === key && item.image_type === type
-    );
-  
-    return imageItem ? imageItem.url : "";
+  console.log(meta,type,  key, );
+  if (!key || !type || !Array.isArray(meta)) {
+    console.log("Invalid parameters:", { key, type, meta });
+    return "";
+  }
+
+  const imageItem = meta.find((item) => {
+    const matchesKey = item[keyName] === key;
+    const matchesType = item.image_type === type;
+    console.log(`Checking item with key: ${item[keyName]}, type: ${item.image_type}`);
+    console.log(`Matches key: ${matchesKey}, Matches type: ${matchesType}`);
+    return matchesKey && matchesType;
+  });
+
+  console.log("Found imageItem:", imageItem);
+  return imageItem ? imageItem.url : "";
   };
 export const getMetaValue = (meta, key = '', keyName = 'key') => {
     if (!key || !isValidArray(meta)) {

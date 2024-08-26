@@ -4,22 +4,26 @@ import { Container, Col, Card } from "react-bootstrap";
 import SecondaryButton from "../../../Components/Button/SecondaryButton/SecondaryButton";
 import { ExploreData } from "./ExploreData";
 import useGetBrandList from "../../../utils/CustomHooks/useBrandList";
-import { getImage, getMetaValue } from "../../../utils/Functions/Filter";
+import { getImage, getMetaValue, getImageUrl } from "../../../utils/Functions/Filter";
 import dummy from '../../../assets/images/dummy.png'
 const ExploreCard = () => {
   const { brandList, getBrandList } = useGetBrandList();
   useEffect(() => {
     getBrandList();
   }, []);
-
-  console.log("brandList", brandList);
-  
+  console.log('brandList',brandList)
   return (
     <div className="explore_card">
       <Container>
         <div class="explore_row">
-          {brandList.map((item) => {
-            const brandImage = getImage(item.brand_page_image_urls, 'Thumbnail', 'thumbnail');
+          {brandList.map((item, index) => {
+            const brandImage = getImageUrl(
+              brandList[index]?.brand_page_image_urls,
+              "Thumbnail",
+              "thumbnail"
+            );
+            console.log('brandImage', brandImage);
+            
             return (
               <Col lg={4} md={6} sm={12}>
                 <Card id={item.id}>
