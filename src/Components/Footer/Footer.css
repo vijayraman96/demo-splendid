@@ -94,6 +94,11 @@
     font-weight: 900;
     margin: 10px 0 15px 0;
 }
+.footer_logo img {
+    width: 200px;
+    height:auto;
+    object-fit: cover;
+}
 @media(max-width: 768px) {
     .footer_title, .footer_agreement {
         width: 100%;

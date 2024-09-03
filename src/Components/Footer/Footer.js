@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { faInstagram, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import splendid from '../../assets/images/splendid.svg';
+import splendid from '../../assets/images/BlackLogo/splendid_type2.png';
 import { useNavigate } from 'react-router-dom';
 import './Footer.css'
 const Footer = () => {
@@ -41,7 +41,8 @@ const Footer = () => {
                         <li><a onClick={() => navigate('/creator')}>I Am A Creator</a></li>
                         <li><a onClick={() => navigate('/')}>I Am A Brand</a></li>
                         <li><a onClick={() => navigate('/about')}>About</a></li>
-                        <li><a href="https://app.splendid.app/orders">Track Your Order</a></li>
+                        {/* <li><a href="https://app.splendid.app/orders">Track Your Order</a></li> */}
+                        <li><a href="/track-your-order">Track Your Order</a></li>
                         <li><a href="mailto:hello@splendid.app">hello@splendid.app</a></li>
                     </ul>
                 </div>

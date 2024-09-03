@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import './Header.css';
-import splendid from '../../assets/images/splendid.svg';
+import splendid from '../../assets/images/BlackLogo/splendid_type2.png';
 import PrimaryButton from '../Button/PrimaryButton/PrimaryButton2';
 import { useEffect, useState } from "react";
 import { NavLink as RouterNavLink, useLocation } from 'react-router-dom';
